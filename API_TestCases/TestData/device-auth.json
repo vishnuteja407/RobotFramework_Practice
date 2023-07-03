@@ -1,0 +1,15 @@
+{
+  "groups": [
+    "admin",
+    "workflow-admin"
+  ],
+  "admin": true,
+  "workflow_name": "",
+  "devices": ${Device_Auth_Payload},
+  "domains_allowed": [
+    "Branch",
+    "Enterprise",
+    "Voice",
+    "DC"
+  ]
+}

@@ -1,0 +1,164 @@
+---
+device_nso:
+  nso:
+    -
+        devices:
+        nso: nso-server
+        nso_cfs_server: linux-cfs-server
+        cfs-rfs-label:
+        nso_netsim_path:
+        ned_package_path:
+        netsim_port_offset: 0
+
+netsim_devices:
+  devices:
+    -
+      device: USCOENGFG01FIE1RTP
+      ned_id: "cisco-ios-cli-6.74"
+      num_devices: 1
+      netsim_mode: extended
+      extension_file: cisco-iosxe_17.3.3_C9300-48U.tar.gz
+      authgroup_name: "branch_netsim_local"
+      user_name: admin
+      user_passwd: admin
+      description: "CEWA Cat 9300"
+      device-type: "cisco-ios"
+      power_supply_template_postfix: -C9300
+      platform_template_postfix: -C9300
+      capture_template_postfix: -Catalyst9000
+      copy_running_template_postfix: -IOS
+    -
+      device: USNCCLTIJ04TVE0001RTP
+      ned_id: "cisco-ios-cli-6.74"
+      num_devices: 1
+      netsim_mode: extended
+      extension_file: cisco-iosxe_16.11.1_C9407R.tar.gz
+      authgroup_name: "branch_netsim_local"
+      user_name: admin
+      user_passwd: admin
+      description: "CEWA Cat 9400"
+      device-type: "cisco-ios"
+      power_supply_template_postfix: -C9400
+      platform_template_postfix: -C9400
+      capture_template_postfix: -Catalyst9000
+      copy_running_template_postfix: -IOS
+    -
+      device: USNCCLTIJ10TDE0002RTP
+      ned_id: "cisco-ios-cli-6.74"
+      num_devices: 1
+      netsim_mode: extended
+      extension_file: cisco-iosxe_16.12.4_C9500-48Y4C.tar.gz
+      authgroup_name: "branch_netsim_local"
+      user_name: admin
+      user_passwd: admin
+      description: "CEWA Cat 9500"
+      device-type: "cisco-ios"
+      power_supply_template_postfix: -C9500
+      platform_template_postfix: -C9500
+      capture_template_postfix: -Catalyst9000
+      copy_running_template_postfix: -IOS
+    -
+      device: NYNYCLB3800IDE01RTP
+      ned_id: "cisco-ios-cli-6.74"
+      num_devices: 1
+      netsim_mode: extended
+      extension_file: cisco-ios_12.2-17r-SX3_WS-C6509-E.tar.gz
+      authgroup_name: "branch_netsim_local"
+      user_name: admin
+      user_passwd: admin
+      description: "Netsim Catalyst 6500"
+      device-type: "cisco-ios"
+      power_supply_template_postfix: -6500
+      platform_template_postfix: -6500
+      capture_template_postfix: -6500
+      copy_running_template_postfix: -IOS
+    -
+      device: USNCCLTLU23IDE001ARTP
+      ned_id: "cisco-ios-cli-6.74"
+      num_devices: 1
+      netsim_mode: extended
+      extension_file: cisco-iosxe_03.08.09.E_WS-C4507R-E.tar.gz
+      authgroup_name: "branch_netsim_local"
+      user_name: admin
+      user_passwd: admin
+      description: "Netsim WS-C4507"
+      device-type: "cisco-ios"
+      power_supply_template_postfix: -4500
+      platform_template_postfix: -4500
+      capture_template_postfix: -4500
+      copy_running_template_postfix: -IOS
+    -
+      device: USAZGNDGD01FIE0001RTP
+      ned_id: "cisco-ios-cli-6.74"
+      num_devices: 1
+      netsim_mode: extended
+      extension_file: cisco-iosxe_03.07.04.E_WS-C3650-48PS.tar.gz
+      authgroup_name: "branch_netsim_local"
+      user_name: admin
+      user_passwd: admin
+      description: "Netsim WS-C3650-48PS"
+      device-type: "cisco-ios"
+      power_supply_template_postfix: -3650
+      platform_template_postfix: -3650
+      capture_template_postfix: -3650
+      copy_running_template_postfix: -IOS
+    -
+      device: MABOSOF01E2RTP
+      ned_id: "cisco-ios-cli-6.74"
+      num_devices: 1
+      netsim_mode: extended
+      extension_file: cisco-ios_12.2-53-SE1_WS-C3560G-24PS-S.tar.gz
+      authgroup_name: "branch_netsim_local"
+      user_name: admin
+      user_passwd: admin
+      description: "Netsim WS-C3560"
+      device-type: "cisco-ios"
+      power_supply_template_postfix: -3560
+      platform_template_postfix: -3560
+      capture_template_postfix: -3560
+      copy_running_template_postfix: -IOS
+    -
+      device: USNCCLTLU17BDM0002RTP
+      ned_id: "cisco-nx-cli-5.21"
+      num_devices: 1
+      netsim_mode: extended
+      extension_file: cisco-nx_7.0-3-I4-6_93180YC-EX.tar.gz
+      authgroup_name: "branch_netsim_local"
+      user_name: admin
+      user_passwd: admin
+      description: "Netsim Nexus9318"
+      device-type: "cisco-nx"
+      power_supply_template_postfix: -9000
+      platform_template_postfix: -9000
+      capture_template_postfix: -9000
+      copy_running_template_postfix: ""
+    -
+      device: AZGNDGD01R1RTP
+      ned_id: "cisco-ios-cli-6.74"
+      num_devices: 1
+      netsim_mode: extended
+      extension_file: cisco-ios_15.3-3-M4_Cisco3945.tar.gz
+      authgroup_name: "branch_netsim_local"
+      user_name: admin
+      user_passwd: admin
+      description: "Netsim 3945"
+      device-type: "cisco-ios"
+      power_supply_template_postfix: -3945
+      platform_template_postfix: -3945
+      capture_template_postfix: -3945
+      copy_running_template_postfix: -IOS
+    -
+      device: GAATLEP01R1RTP
+      ned_id: "cisco-ios-cli-6.74"
+      num_devices: 1
+      netsim_mode: extended
+      extension_file: cisco-ios_12.4-15-T8_Cisco3845.tar.gz
+      authgroup_name: "branch_netsim_local"
+      user_name: admin
+      user_passwd: admin
+      description: "Netsim 3845"
+      device-type: "cisco-ios"
+      power_supply_template_postfix: -3845
+      platform_template_postfix: -3845
+      capture_template_postfix: -3845
+      copy_running_template_postfix: -IOS

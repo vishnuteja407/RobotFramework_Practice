@@ -1,0 +1,481 @@
+{
+    "status": "success",
+    "data": {
+        "resultType": "vector",
+        "result": [
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "http://camunda:8080/engine-rest/engine",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "http://kong:8001",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://auth-service:9202/about/cisco-bpa-platform/mw-auth",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://auth-service:9202/api/v1.0/monitor/db-health-check",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://bac-services-ms:9216/about/cisco-bpa-robot-platform/mw-bac-services-ms",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://camunda-external-tasks:9222/about/cisco-bpa-platform/mw-camunda-external-tasks",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://cmd-analyzer:9876",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://cms-p:9219/about/cisco-bpa-robot-platform/mw-cms-p",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://core-services:9201/about/cisco-bpa-platform/mw-core",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://core-services:9201/api/v1.0/db-health-check/cisco-bpa-platform/mw-core",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://core-services:9201/api/v1.0/nso/nsoConnection?nsoHostname=RTP_NSO_56",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://core-services:9201/api/v1.0/nso/nsoConnection?nsoHostname=RTP_NSO_56/nso5-lsa0-r2",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://core-services:9201/api/v1.0/nso/nsoConnection?nsoHostname=RTP_NSO_56/nso5-lsa3-rb",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://core-services:9201/api/v1.0/nso/nsoConnection?nsoHostname=RTP_NSO_56/nso5-lsa3-rd",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://core-services:9201/api/v1.0/nso/nsoConnection?nsoHostname=RTP_NSO_56/nso5-lsa3-re",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://core-services:9201/api/v1.0/nso/nsoConnection?nsoHostname=RTP_NSO_56/nso5-lsa5-r1",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://core-services:9201/api/v1.0/nso/nsoConnection?nsoHostname=RTP_NSO_61",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://core-services:9201/api/v1.0/nso/nsoConnection?nsoHostname=RTP_NSO_61/nso5-lsa4-rb",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://core-services:9201/api/v1.0/nso/nsoConnection?nsoHostname=RTP_NSO_61/nso5-lsa4-rd",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://core-services:9201/api/v1.0/nso/nsoConnection?nsoHostname=RTP_NSO_61/nso5-lsa4-re",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://core-services:9201/api/v1.0/nso/nsoConnection?nsoHostname=RTP_NSO_61/nso5-rnetsim4",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://core-services:9201/api/v1/mail/healthcheck",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://cwm-ms:9212/about/cisco-bpa-robot-platform/mw-cwm-ms",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://cwm-ms:9212/api/v1.0/db-health-check/cisco-bpa-robot-platform/mw-cwm-ms",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://cwm-ms:9212/api/v1.0/monitor/health-check",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://cwm-ms:9212/api/v1.0/monitor/rabbitmq-connection-check",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://eps-ms:9217/about/cisco-bpa-robot-platform/mw-eps",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://eps-ms:9217/api/v1.0/db-health-check/cisco-bpa-robot-platform/mw-eps",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://hsm-init-ms:9215/about/cisco-bpa-robot-platform/mw-hsm-init-ms",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://market-variance:9205/about/cisco-bpa-platform/mw-market-variance",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://market-variance:9205/api/v1.0/db-health-check/cisco-bpa-platform/mw-market-variance",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://milestones-ms:9211/about/cisco-bpa-platform/mw-milestones",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://milestones-ms:9211/api/v1.0/db-health-check/cisco-bpa-platform/mw-milestones",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://ncd-ms:9221/about/cisco-bpa-robot-platform/mw-ncd",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://ncd-ms:9221/api/v1.0/db-health-check/cisco-bpa-robot-platform/mw-ncd",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://nidm-system-ms:9214/about/cisco-bpa-robot-platform/mw-nidm-system-ms",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://nidm-system-ms:9214/nidm/api/v1/monitor/health-check",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://portal:8081",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://remedy:9218/about/cisco-bpa-robot-platform/mw-remedy",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://remedy:9218/api/v1.0/db-health-check/cisco-bpa-robot-platform/mw-remedy",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://remedy:9218/api/v1.0/monitor/health-check",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://service-catalog-ms:9210/about/cisco-bpa-platform/mw-service-catalog",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "probe_success",
+                    "instance": "https://service-catalog-ms:9210/api/v1.0/db-health-check/cisco-bpa-platform/mw-service-catalog",
+                    "job": "services"
+                },
+                "value": [
+                    1664444092.585,
+                    "1"
+                ]
+            }
+        ]
+    }
+}

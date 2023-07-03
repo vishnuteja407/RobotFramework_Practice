@@ -1,0 +1,91 @@
+{
+  "projectName": "eps-end to end SRF flow",
+  "aitNumber": "100",
+  "srfFlavour": "Rule Request",
+  "pci": "No",
+  "srfFulfillmentDate": "2022-02-02T18:30:00.000Z",
+  "srfExpiryDate": "2023-02-02",
+  "srfJustificationHighRisk": "",
+  "srfChangeReason": "",
+  "email": "nilardas@cisco.com",
+  "phoneNo": "",
+  "uatFlag": "No",
+  "dataClassification": "Proprietary",
+  "changeType": "Normal",
+  "region": "",
+  "transmissionEncrypted": "Yes",
+  "ptsNumber": "",
+  "emailAddresses": "",
+  "rulesData": [
+    {
+      "ruleId": ${PO_Number},
+      "ruleAction": "Allow",
+      "source": [
+        {
+          "type": "HOST",
+          "value": "23.2.2.2",
+          "metadata": {
+            "min": 386007554,
+            "max": 386007554
+          }
+        }
+      ],
+      "sourcePort": "",
+      "sourceNat": [],
+      "destination": [
+        {
+          "type": "HOST",
+          "value": "33.3.3.3",
+          "metadata": {
+            "min": 553845507,
+            "max": 553845507
+          }
+        }
+      ],
+      "services": [
+        {
+          "protocol": "TCP",
+          "port": "23",
+          "type": "SERVICE",
+          "metadata": {
+            "min": 23,
+            "max": 23
+          }
+        }
+      ],
+      "destinationNat": [],
+      "portTranslation": [],
+      "dataClassification": "Proprietary",
+      "transmissionEncrypted": "Yes",
+      "ptsNumber": "",
+      "ruleChangeReason": "",
+      "trafficDirection": "",
+      "redaction": "Production",
+      "expiredAt": "2023-02-02",
+      "ruleEdit": false,
+      "projectName": "eps-end to end SRF flow",
+      "aitNumber": "100",
+      "scoreRules": [
+        {
+          "rankId": 3,
+          "score": "RED",
+          "feedback": "Requires GIS Review: TCP/23 is used for Telnet access. Secure Channel Communication is recommended (SSH TCP/22). Submitting this could delay implementation. [GIS Standard:  INF0301-02] [Criteria ID: 2010-15]",
+          "approvalGroup": "GIS High Risk",
+          "approvedBy": "",
+          "comment": "",
+          "justification": {
+            "expiredAt": "",
+            "armNumber": "",
+            "exception": "",
+            "explanation": "sdf sdf",
+            "type": null
+          },
+          "isValid": true
+        }
+      ],
+      "score": "red",
+      "isValid": true
+    }
+  ],
+  "templateVars": []
+}

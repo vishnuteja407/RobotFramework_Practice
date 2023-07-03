@@ -1,0 +1,10 @@
+﻿Hostname,BLC/Site,Device IP Address,Port Number,NED ID,Authgroup,Device Family,OS Version,Comments
+AUAUSYEQCHIXCLS41,,10.122.32.129,10500,arista-dcs-cli-5.23,dc_netsim_local,,,
+IDIDJKTDC01FWD010A,,10.122.32.129,10501,arista-dcs-cli-5.23,dc_netsim_local,,,
+LNUSNJSCSHW01ALR02,,10.122.32.129,10503,arista-dcs-cli-5.23,dc_netsim_local,,,
+NJWHKCG01FWE102,,10.122.32.129,10502,arista-dcs-cli-5.23,dc_netsim_local,,,
+USAZCDRWF01DRE0139-CZ01,,10.122.32.129,10499,arista-dcs-cli-5.23,dc_netsim_local,,,
+USNJSCSH01ELE001,,10.122.32.129,10504,arista-dcs-cli-5.23,dc_netsim_local,,,
+USNYNYCTP02DBM01,,10.122.32.129,10497,cisco-nx-cli-5.21,dc_netsim_local,,,
+USPALTWRR01DRE0137-GZ01,,10.122.32.65,22,cisco-nx-cli-5.21,dc_local,,,
+USTXRDNCU01DRE0101-CZ04,,10.122.32.63,22,cisco-nx-cli-5.21,dc_local,,,

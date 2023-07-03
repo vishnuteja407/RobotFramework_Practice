@@ -1,0 +1,2 @@
+Hostname,BLC/Site,Device IP Address,Port Number,NED ID,Authgroup,Device Family,OS Version,Comments
+NCCAVAYA01VAR02,, 10.122.32.129, 10470,cisco-ios-cli-6.74,voice_netsim_local, 3825,12.4(15)T1, Netsim device

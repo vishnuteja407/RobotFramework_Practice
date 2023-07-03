@@ -1,0 +1,28 @@
+﻿Hostname,BLC/Site,Device IP Address,Port Number,NED ID,Authgroup,Device Family,OS Version,Comments
+CHCHZRHCP01VAR01,,10.122.32.56,22,cisco-ios-cli-6.74,voice_local,3945,15.5(3)M7, Real Device
+ALBIRGV02VAE01,,10.122.32.7,22,cisco-ios-cli-6.74,voice_local,VG224, 15.1(4)M10, Real device
+USALHMWBV05VAR02,,10.122.32.230, 22,cisco-ios-cli-6.74,voice_local, 2921, 15.5(3)M7, Real device
+NCCAVAYA01VAR02,, 10.122.32.129, 10470,cisco-ios-cli-6.74,voice_netsim_local, 3825,12.4(15)T1, Netsim device
+VARCHVP02VTR01,, 10.122.32.129, 10471,cisco-ios-cli-6.74,voice_netsim_local, 3825, 15.0(1)M3, Netsim device
+FLBRAMT07VAR01,, 10.122.32.129, 10469,cisco-ios-cli-6.74,voice_netsim_local, 3825, 12.4(15)T8, Netsim device
+MOSTLPL04VAR01,, 10.122.32.17, 22,cisco-ios-cli-6.74,voice_local, 3825, 15.1(4)M10, Real device
+USVARCHVE02FWC115B,,10.122.32.129, 10472,cisco-ios-cli-6.74,voice_netsim_local,4451, 15.5(3)S6, Netsim device
+USVARCHLP01NSR0001,, 10.122.32.129, 10473 ,cisco-ios-cli-6.74,voice_netsim_local, 4451, 15.5(3)S5, Netsim device
+AUNWSYDPT33VAE02,, 10.122.32.129, 10474,cisco-ios-cli-6.74,voice_netsim_local, VG310, 15.6(3)M4, Netsim device
+OHCFOEW02VAR01,, 10.122.32.129, 10476,cisco-ios-cli-6.74,voice_netsim_local, 2851, 12.4(15)T8, Netsim device
+USMNMNNUE35VAR02,,10.122.32.129,10475,cisco-ios-cli-6.74,voice_netsim_local,2851,15.0(1)M3,Netsim device
+USNYNYCTP01VAR01,,10.122.32.129, 10477,cisco-ios-cli-6.74,voice_netsim_local,3925,15.0(1)M5, Netsim device
+AUNWSYDPT33VAR01,, 10.122.32.129, 10479,cisco-ios-cli-6.74,voice_netsim_local,3925,15.5(3)M7, Netsim device
+ONTORBS04VAR01,, 10.122.32.129, 10478,cisco-ios-cli-6.74,voice_netsim_local,2911,15.5(3)M7, Netsim device
+CABAKBM01VAR01,, 10.122.32.129,10480,cisco-ios-cli-6.74,voice_netsim_local,2821,12.4(15)T8, Netsim device
+USFLTALMB02VAR01,, 10.122.32.129,10481,cisco-ios-cli-6.74,voice_netsim_local,2821,15.0(1)M3, Netsim device
+CNCNSHAIF49VAR01,,10.122.32.129, 10483,cisco-ios-cli-6.74,voice_netsim_local,4431,16.6.7, Netsim device
+ABCGYFA26VAR01,,10.122.32.129, 10485,cisco-ios-cli-6.74,voice_netsim_local,2951,15.5(3)M7, Netsim device
+AZPHXCC21VAR01,,10.122.32.129,10482,cisco-ios-cli-6.74,voice_netsim_local,2811,15.1(4)M10,Netsim device
+USCAONTOA05VAR01,,10.122.32.129, 10490,cisco-ios-cli-6.74,voice_netsim_local,2811,15.5(3)M7, Netsim device
+ILRMIGR03VAR01,,10.122.32.129,10491,cisco-ios-cli-6.74,voice_netsim_local,2811,12.4(15)T8,Netsim device
+NCCLTGV02VAR07,,10.122.32.129, 10484,cisco-ios-cli-6.74,voice_netsim_local,3845,15.1(4)M10, Netsim device
+NCGSBGE04VAR01,,10.122.32.129, 10486,cisco-ios-cli-6.74,voice_netsim_local,3845,12.4(15)T8, Netsim device
+NYNYCBT06VAR09,,10.122.32.129, 10487,cisco-ios-cli-6.74,voice_netsim_local,3845,15.0(1)M3, Netsim device
+txrdncu01var01,,10.122.32.129, 10488,cisco-ios-cli-6.74,voice_netsim_local,3845,12.3(11)T6, Netsim device
+TXRDNCU01VAR01-PRIV,,10.122.32.129, 10489,cisco-ios-cli-6.74,voice_netsim_local,3845,12.3(11)T6, Netsim device

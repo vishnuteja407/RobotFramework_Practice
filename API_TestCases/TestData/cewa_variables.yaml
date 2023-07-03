@@ -1,0 +1,45 @@
+VERSION: '2.2.1'
+ServiceCatalog:
+    order_details:
+        custom_filter_val: 'Equals'
+        task_expected_result: 'Fail'
+        power_supply:
+          expected_fail_command:
+        platform_validation:
+          expected_fail_command:
+            AZGNDGD01R1RTP:
+              - show env
+            USNCCLTLU17BDM0002RTP:
+              - show boot
+              - dir #{BootImageFileSystem}
+            USNCCLTIJ04TVE0001RTP:
+              - dir all
+        pre_post:
+          expected_fail_command:
+        copy_running:
+          expected_fail_command:
+        device_auth:
+          - hostname: USNCCLTIJ04TVE0001RTP
+            domain: branch
+          - hostname: USNCCLTIJ10TDE0002RTP
+            domain: branch
+          - hostname: NYNYCLB3800IDE01RTP
+            domain: branch
+          - hostname: USNCCLTLU23IDE001ARTP
+            domain: branch
+          - hostname: USAZGNDGD01FIE0001RTP
+            domain: branch
+          - hostname: USNCCLTLU17BDM0002RTP
+            domain: enterprise
+          - hostname: AZGNDGD01R1RTP
+            domain: branch
+          - hostname: GAATLEP01R1RTP
+            domain: enterprise
+          - hostname: USCOENGFG01FIE1RTP
+            domain: branch
+          - hostname: MABOSOF01E2RTP
+            domain: branch
+
+
+
+

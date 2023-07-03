@@ -1,0 +1,299 @@
+{
+  "status": false,
+  "message": "BPA is not completely up and running",
+  "ms_status": {
+    "status": true,
+    "message": "All micro-services are up",
+    "failed_list": [
+      []
+    ],
+    "success_list": [
+      [
+        {
+          "statusCode": "1",
+          "microservice": "camunda",
+          "message": "camunda is up"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "kong",
+          "message": "kong is up"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "auth-service",
+          "message": "auth-service is up"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "auth-service",
+          "message": "auth-service is able to connect to DB"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "bac-services-ms",
+          "message": "bac-services-ms is up"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "camunda-external-tasks",
+          "message": "camunda-external-tasks is up"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "cmd-analyzer",
+          "message": "cmd-analyzer is up"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "cms-p",
+          "message": "cms-p is up"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "core-services",
+          "message": "core-services is up"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "core-services",
+          "message": "core-services is able to connect to DB"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "core-services",
+          "message": "core-services is able to connect to NSO RTP_NSO_56"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "core-services",
+          "message": "core-services is able to connect to NSO RTP_NSO_56/nso5-lsa0-r2"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "core-services",
+          "message": "core-services is able to connect to NSO RTP_NSO_56/nso5-lsa3-rb"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "core-services",
+          "message": "core-services is able to connect to NSO RTP_NSO_56/nso5-lsa3-rd"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "core-services",
+          "message": "core-services is able to connect to NSO RTP_NSO_56/nso5-lsa3-re"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "core-services",
+          "message": "core-services is able to connect to NSO RTP_NSO_56/nso5-lsa5-r1"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "core-services",
+          "message": "core-services is able to connect to NSO RTP_NSO_61"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "core-services",
+          "message": "core-services is able to connect to NSO RTP_NSO_61/nso5-lsa4-rb"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "core-services",
+          "message": "core-services is able to connect to NSO RTP_NSO_61/nso5-lsa4-rd"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "core-services",
+          "message": "core-services is able to connect to NSO RTP_NSO_61/nso5-lsa4-re"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "core-services",
+          "message": "core-services is able to connect to NSO RTP_NSO_61/nso5-rnetsim4"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "core-services",
+          "message": "core-services is able to connect to SMTP"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "cwm-ms",
+          "message": "cwm-ms is up"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "cwm-ms",
+          "message": "cwm-ms is able to connect to DB"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "cwm-ms",
+          "message": "BPA is able to connect to cwm-ms external application"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "cwm-ms",
+          "message": "cwm-ms is able to connect to Rabbit MQ"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "eps-ms",
+          "message": "eps-ms is up"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "eps-ms",
+          "message": "eps-ms is able to connect to DB"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "hsm-init-ms",
+          "message": "hsm-init-ms is up"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "market-variance",
+          "message": "market-variance is up"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "market-variance",
+          "message": "market-variance is able to connect to DB"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "milestones-ms",
+          "message": "milestones-ms is up"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "milestones-ms",
+          "message": "milestones-ms is able to connect to DB"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "ncd-ms",
+          "message": "ncd-ms is up"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "ncd-ms",
+          "message": "ncd-ms is able to connect to DB"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "nidm-system-ms",
+          "message": "nidm-system-ms is up"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "nidm-system-ms",
+          "message": "BPA is able to connect to nidm-system-ms external application"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "portal",
+          "message": "portal is up"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "remedy",
+          "message": "remedy is up"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "remedy",
+          "message": "remedy is able to connect to DB"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "remedy",
+          "message": "BPA is able to connect to remedy external application"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "service-catalog-ms",
+          "message": "service-catalog-ms is up"
+        },
+        {
+          "statusCode": "1",
+          "microservice": "service-catalog-ms",
+          "message": "service-catalog-ms is able to connect to DB"
+        }
+      ]
+    ]
+  },
+  "mongo_status": {
+    "status": false,
+    "message": "Mongo database is down",
+    "failed_list": [
+      [
+        {
+          "instance": "mongodb-arb:6081",
+          "statusCode": "0",
+          "databaseName": "30.133.127.217:27017",
+          "message": "DB State is : (not reachable/healthy)"
+        },
+        {
+          "instance": "mongodb-arb:6081",
+          "statusCode": "0",
+          "databaseName": "30.133.127.95:27017",
+          "message": "DB State is : (not reachable/healthy)"
+        },
+        {
+          "instance": "mongodb-arb:6081",
+          "statusCode": "0",
+          "databaseName": "30.140.200.200:27017",
+          "message": "DB State is : (not reachable/healthy)"
+        }
+      ]
+    ],
+    "success_list": [
+      [
+        {
+          "instance": "mongodb-arb:6081",
+          "statusCode": "1",
+          "databaseName": "30.133.174.126:27017",
+          "message": "SECONDARY DB : 30.133.174.126:27017 is up"
+        },
+        {
+          "instance": "mongodb-arb:6081",
+          "statusCode": "1",
+          "databaseName": "30.140.200.201:27017",
+          "message": "SECONDARY DB : 30.140.200.201:27017 is up"
+        }
+      ]
+    ]
+  },
+  "pg_status": {
+    "status": true,
+    "message": "Postgres database is up",
+    "failed_list": [
+      [
+        {
+          "instance": "postgresdb1:6082",
+          "statusCode": "0",
+          "message": "postgresdb1:6082 is down"
+        },
+        {
+          "instance": "postgresdb2:6082",
+          "statusCode": "0",
+          "message": "postgresdb2:6082 is down"
+        }
+      ]
+    ],
+    "success_list": [
+      [
+        {
+          "instance": "postgresdb3:6082",
+          "statusCode": "1",
+          "message": "postgresdb3:6082 is up"
+        }
+      ]
+    ]
+  }
+}

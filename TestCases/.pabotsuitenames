@@ -1,0 +1,6 @@
+datasources:5918b783bc5d5a41dc86b6bd5cef34473e7f56f8
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:b6f9e3c7dabbbe020af61a84411c56d33f56d171
+--suite Suites.DDT1
+--suite Suites.DDT2

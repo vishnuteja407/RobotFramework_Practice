@@ -1,0 +1,1398 @@
+[
+	{
+		"name": "Branch-Modify-Switch-Pre-Post-Checks",
+		"passExpr": "all",
+		"description": "Branch-Modify-Switch-Pre-Post-Checks",
+		"status": true,
+		"commands": [
+			{
+				"command": "show ip interface brief",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "",
+				"rules": [],
+				"isConfigMode": false
+			},
+			{
+				"command": "show interface #{interface} status",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "!Contains",
+						"opvariable": "",
+						"desc": "Check if interface is valid",
+						"rule": "Invalid",
+						"isRegx": false
+					},
+					{
+						"op": "!Contains",
+						"opvariable": "",
+						"desc": "Check if the endpoint interface is already in use",
+						"rule": "connected",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			},
+			{
+				"command": "show interface trunk",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "",
+				"rules": [],
+				"isConfigMode": false
+			},
+			{
+				"command": "show vlan brief",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "",
+				"rules": [],
+				"isConfigMode": false
+			},
+			{
+				"command": "show running-config interface #{interface}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "!Contains",
+						"opvariable": "",
+						"desc": "Check if interface is valid",
+						"rule": "Invalid",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			}
+		],
+		"commandsLen": 5
+	},
+	{
+		"name": "Branch-Modify-Switch-Pre-Change-Validate",
+		"passExpr": "all",
+		"description": "Branch Modify Switch Pre-Change Validations",
+		"status": true,
+		"commands": [
+			{
+				"command": "show running-config interface #{interface} | include description",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "!Contains",
+						"opvariable": "",
+						"desc": "Verify interface is valid",
+						"rule": "Invalid",
+						"isRegx": false
+					},
+					{
+						"op": "!Contains",
+						"opvariable": "",
+						"desc": "Verify the interface description",
+						"rule": "GIS Disabled",
+						"isRegx": false
+					},
+					{
+						"op": "!Contains",
+						"opvariable": "",
+						"desc": "Verify the interface description",
+						"rule": "DO NOT TAMPER",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			},
+			{
+				"command": "show interface #{interface}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "1 || 2",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "Verify that the interface is not connected",
+						"rule": "is down",
+						"isRegx": false
+					},
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "Verify that the interface is not connected",
+						"rule": "is administratively down",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			}
+		],
+		"commandsLen": 2
+	},
+	{
+		"name": "Branch-Modify-Switch-Post-Change-Validate-access",
+		"passExpr": "all",
+		"description": "Branch Modify Switch Post-Change Validate switchport mode access",
+		"status": true,
+		"commands": [
+			{
+				"command": "show running interface #{interface}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "verify switchport mode",
+						"rule": "switchport mode access",
+						"isRegx": false
+					},
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "verify dot1x",
+						"rule": "dot1x",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			},
+			{
+				"command": "show running interface #{interface} | include #{access_vlan}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "verify switchport access vlan",
+						"rule": "switchport access vlan",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			},
+			{
+				"command": "show interfaces #{interface} status | include #{speed}_",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "RegEx",
+						"opvariable": "speed",
+						"desc": "verify speed",
+						"rule": "[a-z]+\\s+(auto|100|1000)\\s+",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			},
+			{
+				"command": "show interfaces #{interface} status | include #{duplex}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "RegEx",
+						"opvariable": "duplex",
+						"desc": "verify duplex",
+						"rule": "\\d+\\s+(auto|full)\\s+",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			}
+		],
+		"commandsLen": 4
+	},
+	{
+		"name": "Branch-Modify-Switch-Post-Change-Validate-access-voice",
+		"passExpr": "all",
+		"description": "Branch Modify Switch Post-Change Validate switchport mode access with voice vlan",
+		"status": true,
+		"commands": [
+			{
+				"command": "show running interface #{interface}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "verify switchport mode",
+						"rule": "switchport mode access",
+						"isRegx": false
+					},
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "verify dot1x",
+						"rule": "dot1x",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			},
+			{
+				"command": "show running interface #{interface} | include #{access_vlan}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "verify switchport access vlan",
+						"rule": "switchport access vlan",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			},
+			{
+				"command": "show running interface #{interface} | include #{voice_vlan}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "verify switchport voice vlan",
+						"rule": "switchport voice vlan",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			},
+			{
+				"command": "show interfaces #{interface} status | include #{speed}_",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "RegEx",
+						"opvariable": "speed",
+						"desc": "verify speed",
+						"rule": "[a-z]+\\s+(auto|100|1000)\\s+",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			},
+			{
+				"command": "show interfaces #{interface} status | include #{duplex}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "RegEx",
+						"opvariable": "duplex",
+						"desc": "verify duplex",
+						"rule": "\\d+\\s+(auto|full)\\s+",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			}
+		],
+		"commandsLen": 5
+	},
+	{
+		"name": "Branch-Modify-Switch-Post-Change-Validate-interface-no-shutdown",
+		"passExpr": "all",
+		"description": "Branch Modify Switch Post-Change Validate interface not shutdown",
+		"status": true,
+		"commands": [
+			{
+				"command": "show interface #{interface}",
+				"passExpr": "all",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"rules": [
+					{
+						"isAllScripts": false,
+						"isAllTemplates": false,
+						"opvariable": "",
+						"op": "!Contains",
+						"rule": "is administratively down",
+						"desc": "Verify port is not shutdown",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			}
+		],
+		"commandsLen": 1
+	},
+	{
+		"name": "Branch-Modify-Switch-Post-Change-Validate-interface-common",
+		"passExpr": "all",
+		"description": "Branch Modify Switch Post-Change Validate interface common",
+		"status": true,
+		"commands": [
+			{
+				"command": "show running interface #{interface} | include description",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "verify description",
+						"rule": "description",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			},
+			{
+				"command": "show interface #{interface}",
+				"passExpr": "all",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"rules": [
+					{
+						"isAllScripts": false,
+						"isAllTemplates": false,
+						"opvariable": "",
+						"op": "Contains",
+						"rule": "0 input errors",
+						"desc": "Interface input errors",
+						"isRegx": false
+					},
+					{
+						"isAllScripts": false,
+						"isAllTemplates": false,
+						"opvariable": "",
+						"op": "Contains",
+						"rule": "0 output errors",
+						"desc": "Interface output errors",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			}
+		],
+		"commandsLen": 2
+	},
+	{
+		"name": "Branch-Modify-Switch-Post-Change-Validate-interface-shutdown",
+		"passExpr": "all",
+		"description": "Branch Modify Switch Post-Change Validate interface shutdown",
+		"status": true,
+		"commands": [
+			{
+				"command": "show interface #{interface}",
+				"passExpr": "all",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"rules": [
+					{
+						"isAllScripts": false,
+						"isAllTemplates": false,
+						"opvariable": "",
+						"op": "Contains",
+						"rule": "is administratively down",
+						"desc": "Verify port is shutdown",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			}
+		],
+		"commandsLen": 1
+	},
+	{
+		"name": "Branch-Modify-Switch-Post-Change-Validate-qos",
+		"passExpr": "all",
+		"description": "Branch Modify Switch Post-Change Validate QoS",
+		"status": true,
+		"commands": [
+			{
+				"command": "show running interface #{interface} | include #{qos}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "verify qos",
+						"rule": "mls qos",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			}
+		],
+		"commandsLen": 1
+	},
+	{
+		"name": "Branch-Modify-Switch-Post-Change-Validate-trunk",
+		"passExpr": "all",
+		"description": "Branch Modify Switch Post-Change Validate switchport mode trunk",
+		"status": true,
+		"commands": [
+			{
+				"command": "show running interface #{interface}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "verify switchport mode",
+						"rule": "switchport mode trunk",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			},
+			{
+				"command": "show running interface #{interface} | include #{native_vlan}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "verify native vlan",
+						"rule": "trunk native vlan",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			},
+			{
+				"command": "show running interface #{interface} | include #{allowed_vlans}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "verify allowed vlans",
+						"rule": "allowed vlan",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			}
+		],
+		"commandsLen": 3
+	},
+	{
+		"name": "Branch-Modify-Switch-Capture-Device-Configuration",
+		"description": "Branch Modify Switch Capture Device Configuration",
+		"status": true,
+		"passExpr": "all",
+		"tags": [],
+		"commands": [
+			{
+				"command": "show running-config",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "",
+				"rules": [],
+				"isConfigMode": false
+			}
+		],
+		"commandsLen": 1
+	},
+	{
+		"name": "Branch-Modify-Switch-Pre-Post-Checks-V1p2",
+		"passExpr": "all",
+		"description": "Branch-Modify-Switch-Pre-Post-Checks",
+		"status": true,
+		"commands": [
+			{
+				"command": "show ip int br",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "",
+				"rules": [],
+				"isConfigMode": false
+			},
+			{
+				"command": "show int #{interface} status",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "!Contains",
+						"opvariable": "",
+						"desc": "Check if interface is valid",
+						"rule": "Invalid",
+						"isRegx": false
+					},
+					{
+						"op": "!Contains",
+						"opvariable": "",
+						"desc": "Check if the endpoint interface is already in use",
+						"rule": "connected",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			},
+			{
+				"command": "show int trunk",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "",
+				"rules": [],
+				"isConfigMode": false
+			},
+			{
+				"command": "show vlan br",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "",
+				"rules": [],
+				"isConfigMode": false
+			},
+			{
+				"command": "show run int #{interface}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "!Contains",
+						"opvariable": "",
+						"desc": "Check if interface is valid",
+						"rule": "Invalid",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			}
+		],
+		"commandsLen": 5
+	},
+	{
+		"name": "Branch-Modify-Switch-Pre-Change-Validate-V1p2",
+		"passExpr": "all",
+		"description": "Branch Modify Switch Pre-Change Validations",
+		"status": true,
+		"commands": [
+			{
+				"command": "show running-config interface #{interface} | include description",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "!Contains",
+						"opvariable": "",
+						"desc": "Verify interface is valid",
+						"rule": "Invalid",
+						"isRegx": false
+					},
+					{
+						"op": "!Contains",
+						"opvariable": "",
+						"desc": "Verify the interface description",
+						"rule": "GIS Disabled",
+						"isRegx": false
+					},
+					{
+						"op": "!Contains",
+						"opvariable": "",
+						"desc": "Verify the interface description",
+						"rule": "DO NOT TAMPER",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			},
+			{
+				"command": "show interface #{interface}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "1 || 2",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "Verify that the interface is not connected",
+						"rule": "is down",
+						"isRegx": false
+					},
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "Verify that the interface is not connected",
+						"rule": "is administratively down",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			}
+		],
+		"commandsLen": 2
+	},
+	{
+		"name": "Branch-Modify-Switch-Post-Change-Validate-access-V1p2",
+		"passExpr": "all",
+		"description": "Branch Modify Switch Post-Change Validate switchport mode access",
+		"status": true,
+		"commands": [
+			{
+				"command": "show running interface #{interface}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "verify switchport mode",
+						"rule": "switchport mode access",
+						"isRegx": false
+					},
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "verify dot1x",
+						"rule": "dot1x",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			},
+			{
+				"command": "show running interface #{interface} | include #{access_vlan}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "verify switchport access vlan",
+						"rule": "switchport access vlan",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			},
+			{
+				"command": "show interfaces #{interface} status | include #{speed}_",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "RegEx",
+						"opvariable": "speed",
+						"desc": "verify speed",
+						"rule": "[a-z]+\\s+(auto|100|1000)\\s+",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			},
+			{
+				"command": "show interfaces #{interface} status | include #{duplex}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "RegEx",
+						"opvariable": "duplex",
+						"desc": "verify duplex",
+						"rule": "\\d+\\s+(auto|full)\\s+",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			}
+		],
+		"commandsLen": 4
+	},
+	{
+		"name": "Branch-Modify-Switch-Post-Change-Validate-access-voice-V1p2",
+		"passExpr": "all",
+		"description": "Branch Modify Switch Post-Change Validate switchport mode access with voice vlan",
+		"status": true,
+		"commands": [
+			{
+				"command": "show running interface #{interface}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "verify switchport mode",
+						"rule": "switchport mode access",
+						"isRegx": false
+					},
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "verify dot1x",
+						"rule": "dot1x",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			},
+			{
+				"command": "show running interface #{interface} | include #{access_vlan}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "verify switchport access vlan",
+						"rule": "switchport access vlan",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			},
+			{
+				"command": "show running interface #{interface} | include #{voice_vlan}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "verify switchport voice vlan",
+						"rule": "switchport voice vlan",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			},
+			{
+				"command": "show interfaces #{interface} status | include #{speed}_",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "RegEx",
+						"opvariable": "speed",
+						"desc": "verify speed",
+						"rule": "[a-z]+\\s+(auto|10|100|1000|a-auto|a-10|a-100|a-1000)\\s+",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			},
+			{
+				"command": "show interfaces #{interface} status | include #{duplex}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "RegEx",
+						"opvariable": "duplex",
+						"desc": "verify duplex",
+						"rule": "\\d+\\s+(auto|full)\\s+",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			}
+		],
+		"commandsLen": 5
+	},
+	{
+		"name": "Branch-Modify-Switch-Post-Change-Validate-interface-no-shutdown-V1p2",
+		"passExpr": "all",
+		"description": "Branch Modify Switch Post-Change Validate interface not shutdown",
+		"status": true,
+		"commands": [
+			{
+				"command": "show interface #{interface}",
+				"passExpr": "all",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"rules": [
+					{
+						"isAllScripts": false,
+						"isAllTemplates": false,
+						"opvariable": "",
+						"op": "!Contains",
+						"rule": "is administratively down",
+						"desc": "Verify port is not shutdown",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			}
+		],
+		"commandsLen": 1
+	},
+	{
+		"name": "Branch-Modify-Switch-Post-Change-Validate-interface-common-V1p2",
+		"passExpr": "all",
+		"description": "Branch Modify Switch Post-Change Validate interface common",
+		"status": true,
+		"commands": [
+			{
+				"command": "show running interface #{interface} | include description",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "verify description",
+						"rule": "description",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			},
+			{
+				"command": "show interface #{interface}",
+				"passExpr": "all",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"rules": [
+					{
+						"isAllScripts": false,
+						"isAllTemplates": false,
+						"opvariable": "",
+						"op": "Contains",
+						"rule": "0 input errors",
+						"desc": "Interface input errors",
+						"isRegx": false
+					},
+					{
+						"isAllScripts": false,
+						"isAllTemplates": false,
+						"opvariable": "",
+						"op": "Contains",
+						"rule": "0 output errors",
+						"desc": "Interface output errors",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			}
+		],
+		"commandsLen": 2
+	},
+	{
+		"name": "Branch-Modify-Switch-Post-Change-Validate-interface-shutdown-V1p2",
+		"passExpr": "all",
+		"description": "Branch Modify Switch Post-Change Validate interface shutdown",
+		"status": true,
+		"commands": [
+			{
+				"command": "show interface #{interface}",
+				"passExpr": "all",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"rules": [
+					{
+						"isAllScripts": false,
+						"isAllTemplates": false,
+						"opvariable": "",
+						"op": "Contains",
+						"rule": "is administratively down",
+						"desc": "Verify port is shutdown",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			}
+		],
+		"commandsLen": 1
+	},
+	{
+		"name": "Branch-Modify-Switch-Post-Change-Validate-qos-V1p2",
+		"passExpr": "all",
+		"description": "Branch Modify Switch Post-Change Validate QoS",
+		"status": true,
+		"commands": [
+			{
+				"command": "show running interface #{interface} | include #{qos}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "verify qos",
+						"rule": "mls qos",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			}
+		],
+		"commandsLen": 1
+	},
+	{
+		"name": "Branch-Modify-Switch-Post-Change-Validate-trunk-V1p2",
+		"passExpr": "all",
+		"description": "Branch Modify Switch Post-Change Validate switchport mode trunk",
+		"status": true,
+		"commands": [
+			{
+				"command": "show running interface #{interface}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "verify switchport mode",
+						"rule": "switchport mode trunk",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			},
+			{
+				"command": "show running interface #{interface} | include #{native_vlan}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "verify native vlan",
+						"rule": "trunk native vlan",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			},
+			{
+				"command": "show running interface #{interface} | include #{allowed_vlans}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "verify allowed vlans",
+						"rule": "allowed vlan",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			}
+		],
+		"commandsLen": 3
+	},
+	{
+		"name": "Branch-Modify-Switch-Capture-Device-Configuration-V1p2",
+		"description": "Branch Modify Switch Capture Device Configuration",
+		"status": true,
+		"passExpr": "all",
+		"tags": [],
+		"commands": [
+			{
+				"command": "show running-config",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "",
+				"rules": [],
+				"isConfigMode": false
+			}
+		],
+		"commandsLen": 1
+	},
+	{
+		"commands": [
+			{
+				"command": "show vlan id #{vlanId}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "Verify Vlan is added",
+						"rule": "VLAN Name",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			}
+		],
+		"status": true,
+		"description": "Branch-Modify-Switch-Post-Change-Validation-Add-VLAN",
+		"passExpr": "all",
+		"name": "Branch-Modify-Switch-Post-Change-Validation-Add-VLAN-V1p2",
+		"tags": [],
+		"commandsLen": 1
+	},
+	{
+		"commands": [
+			{
+				"command": "show vlan id #{vlanId}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "Verify vlan not in used",
+						"rule": "not found in current VLAN database",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			},
+			{
+				"command": "show vlan name #{vlanName}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "Verify vlan not in used",
+						"rule": "not found in current VLAN database",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			}
+		],
+		"status": true,
+		"name": "Branch-Modify-Switch-Pre-Change-Validation-Add-VLAN-V1p2",
+		"passExpr": "all",
+		"description": "Branch-Modify-Switch-Pre-Change-Validation-Add-VLAN",
+		"tags": [],
+		"commandsLen": 1
+	},
+	{
+		"commands": [
+			{
+				"command": "show vlan",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+				],
+				"isConfigMode": false
+			}
+		],
+		"status": true,
+		"description": "Branch-Modify-Switch-PrePostChangeCapture-VLAN",
+		"passExpr": "all",
+		"name": "Branch-Modify-Switch-PrePostChangeCapture-VLAN-V1p2",
+		"tags": [],
+		"commandsLen": 1
+	},
+	{
+		"commands": [
+			{
+				"command": "show vlan id #{vlanId}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "Verify vlan not in used",
+						"rule": "not found in current VLAN database",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			}
+		],
+		"status": true,
+		"name": "Branch-Modify-Switch-Post-Change-Validation-Delete-VLAN-V1p2",
+		"passExpr": "all",
+		"description": "Branch-Modify-Switch-Post-Change-Validation-Delete-VLAN",
+		"tags": [],
+		"commandsLen": 1
+	},
+	{
+		"commands": [
+			{
+				"command": "show vlan id #{vlanId}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "!RegEx",
+						"opvariable": "interface",
+						"desc": "Verify no interface configured with the vlan to be deleted",
+						"rule": "(Gi[\\d])(\\/\\d)|(\\/\\d*)",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			},
+			{
+				"command": "show spanning-tree vlan #{vlanId}",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "!Contains",
+						"opvariable": "",
+						"desc": "Verify no spanning-tree port shown up except for the trunk port",
+						"rule": "Edge",
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			}
+		],
+		"status": true,
+		"description": "Branch-Modify-Switch-Pre-Change-Validation-Delete-VLAN",
+		"passExpr": "all",
+		"name": "Branch-Modify-Switch-Pre-Change-Validation-Delete-VLAN-V1p2",
+		"tags": [],
+		"commandsLen": 2
+	},
+	{
+		"commands": [
+			{
+				"command": "show interfaces #{trunkInterface} trunk",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "Vlans allowed on trunk",
+						"rule": "Vlans allowed on trunk",
+						"isRegx": false
+					},
+					{
+						"op": "Script",
+						"opvariable": "",
+						"desc": "Verify vlan present or not",
+						"analysis": "cisco_ios_show_interfaces_interface_trunk_analysis.py",
+						"template": "cisco_ios_show_interfaces_interface_trunk.template",
+						"variables": {
+							"templateType": "DELETE_VLAN_PRE_CHECK",
+							"vlanId": "#{vlanId}"
+						},
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			}
+		],
+		"status": true,
+		"description": "Branch Modify Switch Pre-Change Validation Delete VLAN Trunk",
+		"passExpr": "all",
+		"name": "Branch-Modify-Switch-Pre-Change-Validation-Delete-VLAN-Trunk-V1p2",
+		"tags": [],
+		"commandsLen": 1
+	},
+	{
+		"commands": [
+			{
+				"command": "show interfaces #{trunkInterface} trunk",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "Vlans allowed on trunk",
+						"rule": "Vlans allowed on trunk",
+						"isRegx": false
+					},
+					{
+						"op": "Script",
+						"opvariable": "",
+						"desc": "Verify vlan present or not",
+						"analysis": "cisco_ios_show_interfaces_interface_trunk_analysis.py",
+						"template": "cisco_ios_show_interfaces_interface_trunk.template",
+						"variables": {
+							"templateType": "DELETE_VLAN_POST_CHECK",
+							"vlanId": "#{vlanId}"
+						},
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			}
+		],
+		"status": true,
+		"description": "Branch Modify Switch Post-Change Validation Delete VLAN Trunk",
+		"passExpr": "all",
+		"name": "Branch-Modify-Switch-Post-Change-Validation-Delete-VLAN-Trunk-V1p2",
+		"tags": [],
+		"commandsLen": 1
+	},
+	{
+		"commands": [
+			{
+				"command": "show interfaces #{trunkInterface} trunk",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "Vlans allowed on trunk",
+						"rule": "Vlans allowed on trunk",
+						"isRegx": false
+					},
+					{
+						"op": "Script",
+						"opvariable": "",
+						"desc": "Verify vlan present or not",
+						"analysis": "cisco_ios_show_interfaces_interface_trunk_analysis.py",
+						"template": "cisco_ios_show_interfaces_interface_trunk.template",
+						"variables": {
+							"templateType": "ADD_VLAN_PRE_CHECK",
+							"vlanId": "#{vlanId}"
+						},
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			}
+		],
+		"status": true,
+		"description": "Branch Modify Switch Pre-Change Validation Add VLAN Trunk",
+		"passExpr": "all",
+		"name": "Branch-Modify-Switch-Pre-Change-Validation-Add-VLAN-Trunk-V1p2",
+		"tags": [],
+		"commandsLen": 1
+	},
+	{
+		"commands": [
+			{
+				"command": "show interfaces #{trunkInterface} trunk",
+				"goToStepOnPass": "",
+				"goToStepOnFail": "",
+				"passExpr": "all",
+				"rules": [
+					{
+						"op": "Contains",
+						"opvariable": "",
+						"desc": "Vlans allowed on trunk",
+						"rule": "Vlans allowed on trunk",
+						"isRegx": false
+					},
+					{
+						"op": "Script",
+						"opvariable": "",
+						"desc": "Verify vlan present or not",
+						"analysis": "cisco_ios_show_interfaces_interface_trunk_analysis.py",
+						"template": "cisco_ios_show_interfaces_interface_trunk.template",
+						"variables": {
+							"templateType": "ADD_VLAN_POST_CHECK",
+							"vlanId": "#{vlanId}"
+						},
+						"isRegx": false
+					}
+				],
+				"isConfigMode": false
+			}
+		],
+		"status": true,
+		"description": "Branch Modify Switch Post-Change Validation Add VLAN Trunk",
+		"passExpr": "all",
+		"name": "Branch-Modify-Switch-Post-Change-Validation-Add-VLAN-Trunk-V1p2",
+		"tags": [],
+		"commandsLen": 1
+  	},
+  	{
+  	"commands": [{
+  			"command": "show interface status",
+  			"goToStepOnPass": "",
+  			"goToStepOnFail": "",
+  			"passExpr": "",
+  			"rules": [],
+  			"isConfigMode": false
+  		},
+  		{
+  			"command": "show interface trunk",
+  			"goToStepOnPass": "",
+  			"goToStepOnFail": "",
+  			"passExpr": "",
+  			"rules": [],
+  			"isConfigMode": false
+  		},
+  		{
+  			"command": "show vlan",
+  			"goToStepOnPass": "",
+  			"goToStepOnFail": "",
+  			"passExpr": "",
+  			"rules": [],
+  			"isConfigMode": false
+  		},
+  		{
+  			"command": "show cdp neighbors",
+  			"goToStepOnPass": "",
+  			"goToStepOnFail": "",
+  			"passExpr": "",
+  			"rules": [],
+  			"isConfigMode": false
+  		},
+  		{
+  			"command": "show lldp neighbors",
+  			"goToStepOnPass": "",
+  			"goToStepOnFail": "",
+  			"passExpr": "",
+  			"rules": [],
+  			"isConfigMode": false
+  		},
+  		{
+  			"command": "show run",
+  			"goToStepOnPass": "",
+  			"goToStepOnFail": "",
+  			"passExpr": "",
+  			"rules": [],
+  			"isConfigMode": false
+  		}
+  	],
+  	"status": true,
+  	"description": "Branch Modify Switch Check Port Availability",
+  	"passExpr": "",
+  	"name": "Branch-Modify-Switch-Check-Port-Availability",
+  	"tags": [],
+  	"commandsLen": 6
+  	}
+]

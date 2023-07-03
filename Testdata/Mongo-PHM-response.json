@@ -1,0 +1,358 @@
+{
+    "status": "success",
+    "data": {
+        "resultType": "vector",
+        "result": [
+            {
+                "metric": {
+                    "__name__": "mongodb_mongod_replset_member_health",
+                    "instance": "mongodb-arb:6081",
+                    "job": "mongodb",
+                    "name": "30.133.127.217:27017",
+                    "set": "bpa",
+                    "state": "ARBITER"
+                },
+                "value": [
+                    1654156308.994,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "mongodb_mongod_replset_member_health",
+                    "instance": "mongodb-arb:6081",
+                    "job": "mongodb",
+                    "name": "30.133.127.95:27017",
+                    "set": "bpa",
+                    "state": "SECONDARY"
+                },
+                "value": [
+                    1654156308.994,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "mongodb_mongod_replset_member_health",
+                    "instance": "mongodb-arb:6081",
+                    "job": "mongodb",
+                    "name": "30.133.174.126:27017",
+                    "set": "bpa",
+                    "state": "SECONDARY"
+                },
+                "value": [
+                    1654156308.994,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "mongodb_mongod_replset_member_health",
+                    "instance": "mongodb-arb:6081",
+                    "job": "mongodb",
+                    "name": "30.140.200.200:27017",
+                    "set": "bpa",
+                    "state": "PRIMARY"
+                },
+                "value": [
+                    1654156308.994,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "mongodb_mongod_replset_member_health",
+                    "instance": "mongodb-arb:6081",
+                    "job": "mongodb",
+                    "name": "30.140.200.201:27017",
+                    "set": "bpa",
+                    "state": "SECONDARY"
+                },
+                "value": [
+                    1654156308.994,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "mongodb_mongod_replset_member_health",
+                    "instance": "mongodb1:6081",
+                    "job": "mongodb",
+                    "name": "30.133.127.217:27017",
+                    "set": "bpa",
+                    "state": "ARBITER"
+                },
+                "value": [
+                    1654156308.994,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "mongodb_mongod_replset_member_health",
+                    "instance": "mongodb1:6081",
+                    "job": "mongodb",
+                    "name": "30.133.127.95:27017",
+                    "set": "bpa",
+                    "state": "SECONDARY"
+                },
+                "value": [
+                    1654156308.994,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "mongodb_mongod_replset_member_health",
+                    "instance": "mongodb1:6081",
+                    "job": "mongodb",
+                    "name": "30.133.174.126:27017",
+                    "set": "bpa",
+                    "state": "SECONDARY"
+                },
+                "value": [
+                    1654156308.994,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "mongodb_mongod_replset_member_health",
+                    "instance": "mongodb1:6081",
+                    "job": "mongodb",
+                    "name": "30.140.200.200:27017",
+                    "set": "bpa",
+                    "state": "PRIMARY"
+                },
+                "value": [
+                    1654156308.994,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "mongodb_mongod_replset_member_health",
+                    "instance": "mongodb1:6081",
+                    "job": "mongodb",
+                    "name": "30.140.200.201:27017",
+                    "set": "bpa",
+                    "state": "SECONDARY"
+                },
+                "value": [
+                    1654156308.994,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "mongodb_mongod_replset_member_health",
+                    "instance": "mongodb2:6081",
+                    "job": "mongodb",
+                    "name": "30.133.127.217:27017",
+                    "set": "bpa",
+                    "state": "ARBITER"
+                },
+                "value": [
+                    1654156308.994,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "mongodb_mongod_replset_member_health",
+                    "instance": "mongodb2:6081",
+                    "job": "mongodb",
+                    "name": "30.133.127.95:27017",
+                    "set": "bpa",
+                    "state": "SECONDARY"
+                },
+                "value": [
+                    1654156308.994,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "mongodb_mongod_replset_member_health",
+                    "instance": "mongodb2:6081",
+                    "job": "mongodb",
+                    "name": "30.133.174.126:27017",
+                    "set": "bpa",
+                    "state": "SECONDARY"
+                },
+                "value": [
+                    1654156308.994,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "mongodb_mongod_replset_member_health",
+                    "instance": "mongodb2:6081",
+                    "job": "mongodb",
+                    "name": "30.140.200.200:27017",
+                    "set": "bpa",
+                    "state": "PRIMARY"
+                },
+                "value": [
+                    1654156308.994,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "mongodb_mongod_replset_member_health",
+                    "instance": "mongodb2:6081",
+                    "job": "mongodb",
+                    "name": "30.140.200.201:27017",
+                    "set": "bpa",
+                    "state": "SECONDARY"
+                },
+                "value": [
+                    1654156308.994,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "mongodb_mongod_replset_member_health",
+                    "instance": "mongodb4:6081",
+                    "job": "mongodb",
+                    "name": "30.133.127.217:27017",
+                    "set": "bpa",
+                    "state": "ARBITER"
+                },
+                "value": [
+                    1654156308.994,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "mongodb_mongod_replset_member_health",
+                    "instance": "mongodb4:6081",
+                    "job": "mongodb",
+                    "name": "30.133.127.95:27017",
+                    "set": "bpa",
+                    "state": "SECONDARY"
+                },
+                "value": [
+                    1654156308.994,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "mongodb_mongod_replset_member_health",
+                    "instance": "mongodb4:6081",
+                    "job": "mongodb",
+                    "name": "30.133.174.126:27017",
+                    "set": "bpa",
+                    "state": "SECONDARY"
+                },
+                "value": [
+                    1654156308.994,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "mongodb_mongod_replset_member_health",
+                    "instance": "mongodb4:6081",
+                    "job": "mongodb",
+                    "name": "30.140.200.200:27017",
+                    "set": "bpa",
+                    "state": "PRIMARY"
+                },
+                "value": [
+                    1654156308.994,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "mongodb_mongod_replset_member_health",
+                    "instance": "mongodb4:6081",
+                    "job": "mongodb",
+                    "name": "30.140.200.201:27017",
+                    "set": "bpa",
+                    "state": "SECONDARY"
+                },
+                "value": [
+                    1654156308.994,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "mongodb_mongod_replset_member_health",
+                    "instance": "mongodb5:6081",
+                    "job": "mongodb",
+                    "name": "30.133.127.217:27017",
+                    "set": "bpa",
+                    "state": "ARBITER"
+                },
+                "value": [
+                    1654156308.994,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "mongodb_mongod_replset_member_health",
+                    "instance": "mongodb5:6081",
+                    "job": "mongodb",
+                    "name": "30.133.127.95:27017",
+                    "set": "bpa",
+                    "state": "SECONDARY"
+                },
+                "value": [
+                    1654156308.994,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "mongodb_mongod_replset_member_health",
+                    "instance": "mongodb5:6081",
+                    "job": "mongodb",
+                    "name": "30.133.174.126:27017",
+                    "set": "bpa",
+                    "state": "SECONDARY"
+                },
+                "value": [
+                    1654156308.994,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "mongodb_mongod_replset_member_health",
+                    "instance": "mongodb5:6081",
+                    "job": "mongodb",
+                    "name": "30.140.200.200:27017",
+                    "set": "bpa",
+                    "state": "PRIMARY"
+                },
+                "value": [
+                    1654156308.994,
+                    "1"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "mongodb_mongod_replset_member_health",
+                    "instance": "mongodb5:6081",
+                    "job": "mongodb",
+                    "name": "30.140.200.201:27017",
+                    "set": "bpa",
+                    "state": "SECONDARY"
+                },
+                "value": [
+                    1654156308.994,
+                    "1"
+                ]
+            }
+        ]
+    }
+}

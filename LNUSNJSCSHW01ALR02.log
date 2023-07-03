@@ -1,0 +1,2458 @@
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+show clock
+Mon Jan 14 18:42:49 2013
+timezone is US/Central
+LNUSNJSCSHW01ALR02#
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+show version
+show version
+Arista DCS-7050SX-128-F
+Hardware version:    02.00
+Serial number:       JPE13466400
+System MAC address:  001c.7357.200e
+
+Software image version: 4.18.2-REV2-FX.1
+Architecture:           i386
+Internal build version: 4.18.2-REV2-FX.1-5977838.4182REV2FX1
+Internal build ID:      7bcd5595-b52e-461e-8f40-ebed0d70b96c
+
+Uptime:                 258 weeks, 2 days, 17 hours and 21 minutes
+Total memory:           8008948 kB
+Free memory:            5456148 kB
+
+LNUSNJSCSHW01ALR02#
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+show interface description
+show interface description
+Interface                      Status         Protocol Description
+Et1                            admin down     down     LNUSNJSCSHW01ALR02_TE1/7_adminshut_under_INC000018625475
+Et2                            admin down     down     LNUSNJSCSHW01ALR02_TE1/8_adminshut_under_INC000018625475
+Et3                            up             up       SCSRETLDAP01-n2p1
+Et4                            up             up       SCSRETLDAP02-n2p1
+Et5                            up             up       SNRSCS0511_S1P2
+Et6                            admin down     down     NXC
+Et7                            up             up       SNRSCS0513_S1P2
+Et8                            down           down     SNRSCS0514_S1P2
+Et9                            admin down     notpresent Unused_Ports
+Et10                           down           down     SCSRETLPAL01 mellanox s2p1
+Et11                           down           down     SCSRETLPAL02 mellanox s2p1
+Et12                           up             up       SCSRETLPAL250-n1p2
+Et13                           up             up       SCSRETLPAL251-n1p2
+Et14                           admin down     notpresent Unused_Ports
+Et15                           admin down     notpresent Unused_Ports
+Et16                           admin down     notpresent Unused_Ports
+Et17                           admin down     notpresent Unused_Ports
+Et18                           admin down     notpresent Unused_Ports
+Et19                           admin down     notpresent Unused_Ports
+Et20                           admin down     notpresent Unused_Ports
+Et21                           admin down     notpresent Unused_Ports
+Et22                           admin down     notpresent Unused_Ports
+Et23                           admin down     notpresent Unused_Ports
+Et24                           admin down     notpresent Unused_Ports
+Et25                           admin down     notpresent Unused_Ports
+Et26                           admin down     notpresent Unused_Ports
+Et27                           admin down     notpresent Unused_Ports
+Et28                           admin down     notpresent Unused_Ports
+Et29                           admin down     notpresent Unused_Ports
+Et30                           admin down     notpresent Unused_Ports
+Et31                           admin down     notpresent Unused_Ports
+Et32                           admin down     notpresent Unused_Ports
+Et33                           admin down     notpresent Unused_Ports
+Et34                           admin down     notpresent Unused_Ports
+Et35                           admin down     notpresent Unused_Ports
+Et36                           admin down     notpresent Unused_Ports
+Et37                           admin down     notpresent Unused_Ports
+Et38                           admin down     notpresent Unused_Ports
+Et39                           admin down     notpresent Unused_Ports
+Et40                           admin down     notpresent Unused_Ports
+Et41                           admin down     notpresent Unused_Ports
+Et42                           admin down     notpresent Unused_Ports
+Et43                           admin down     notpresent Unused_Ports
+Et44                           admin down     notpresent Unused_Ports
+Et45                           down           notpresent usnjscshw01ebm01 GiX/Y
+Et46                           up             up       USNJSCSHW01FWRM02_G4/1
+Et47                           admin down     down     Unused_Ports
+Et48                           up             up       firewall_FLLCCXSCSHWL2_Port5_vrrp-159.5.119.132/29
+Et49                           admin down     notpresent Unused_Ports
+Et50                           admin down     notpresent Unused_Ports
+Et51                           admin down     notpresent Unused_Ports
+Et52                           admin down     notpresent Unused_Ports
+Et53                           admin down     notpresent Unused_Ports
+Et54                           admin down     notpresent Unused_Ports
+Et55                           admin down     notpresent Unused_Ports
+Et56                           admin down     notpresent Unused_Ports
+Et57                           admin down     notpresent Unused_Ports
+Et58                           admin down     notpresent Unused_Ports
+Et59                           admin down     notpresent Unused_Ports
+Et60                           admin down     notpresent Unused_Ports
+Et61                           admin down     notpresent Unused_Ports
+Et62                           admin down     notpresent Unused_Ports
+Et63                           admin down     notpresent Unused_Ports
+Et64                           admin down     notpresent Unused_Ports
+Et65                           admin down     notpresent Unused_Ports
+Et66                           admin down     notpresent Unused_Ports
+Et67                           admin down     notpresent Unused_Ports
+Et68                           admin down     notpresent Unused_Ports
+Et69                           admin down     notpresent Unused_Ports
+Et70                           admin down     notpresent Unused_Ports
+Et71                           admin down     notpresent Unused_Ports
+Et72                           admin down     notpresent Unused_Ports
+Et73                           admin down     notpresent Unused_Ports
+Et74                           admin down     notpresent Unused_Ports
+Et75                           admin down     notpresent Unused_Ports
+Et76                           admin down     notpresent Unused_Ports
+Et77                           admin down     notpresent Unused_Ports
+Et78                           admin down     notpresent Unused_Ports
+Et79                           admin down     notpresent Unused_Ports
+Et80                           admin down     notpresent Unused_Ports
+Et81                           admin down     notpresent Unused_Ports
+Et82                           admin down     notpresent Unused_Ports
+Et83                           admin down     notpresent Unused_Ports
+Et84                           admin down     notpresent Unused_Ports
+Et85                           admin down     notpresent Unused_Ports
+Et86                           admin down     notpresent Unused_Ports
+Et87                           admin down     notpresent Unused_Ports
+Et88                           admin down     notpresent Unused_Ports
+Et89                           admin down     notpresent Unused_Ports
+Et90                           admin down     notpresent Unused_Ports
+Et91                           admin down     notpresent Unused_Ports
+Et92                           admin down     notpresent Unused_Ports
+Et93                           admin down     notpresent Unused_Ports
+Et94                           admin down     notpresent Unused_Ports
+Et95                           admin down     notpresent Unused_Ports
+Et96                           up             up       UPLINK_USNJSCSHW01SRM0002-ptpd_e13
+Et97                           up             up       LNUSNJSCSHW01ALE03_ETH97
+Et98                           up             up       LNUSNJSCSHW01ALE03_ETH98
+Et99                           admin down     notpresent 
+Et100                          admin down     notpresent 
+Et101                          admin down     notpresent 
+Et102                          admin down     notpresent 
+Et103                          admin down     notpresent 
+Et104                          admin down     notpresent 
+Lo0                            up             up       Router Integrity Enterprise Template rollout for BOA AUDIT Feb 2005
+Lo1                            up             up       LLCC1_BGP_PEER
+Ma1                            down           down     LNUSNJSCSHW01ALR02_g2/1
+Ma2                            admin down     down     
+Po1                            up             up       CROSSLINK_LNUSNJSCSHW01ALE03_ETH97_ETH98
+Po12                           admin down     down     UPLINK_LNUSNJSCSHW01ALR02_TE1/7_TE1/8_adminshut_under_INC000018625475
+Vl1                            admin down     down     
+Vl5                            up             up       CROSSLINK_159.5.119.154/30
+Vl101                          down           lowerlayerdown LLCC1_FW_MGMT_159.5.119.136/29
+Vl301                          up             up       LLCC1_159.5.119.128/29
+Vl501                          up             up       SERVERS_VLAN501_ALE01_ALE02_159.5.116.0/26
+Vl502                          up             up       SERVERS_VLAN502_ALE01_ALE02_159.5.116.64/26
+Vl503                          up             up       SERVERS_VLAN503_ALE01_ALE02_159.5.116.128/26
+Vl504                          up             up       SERVERS_VLAN504_ALE01_ALE02_159.5.116.192/26
+Vl510                          up             up       SERVERS_VLAN510_165.37.175.0/24
+Vl511                          up             up       SunriseVM_165.37.174.0/24
+LNUSNJSCSHW01ALR02#
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+show interface status
+show interface status
+Port       Name                                                                  Status       Vlan     Duplex Speed  Type         Flags
+Et1        LNUSNJSCSHW01ALR02_TE1/7_adminshut_under_INC000018625475              disabled     in Po12  full   10G    10GBASE-SR        
+Et2        LNUSNJSCSHW01ALR02_TE1/8_adminshut_under_INC000018625475              disabled     in Po12  full   10G    10GBASE-SR        
+Et3        SCSRETLDAP01-n2p1                                                     connected    510      full   10G    10GBASE-SR        
+Et4        SCSRETLDAP02-n2p1                                                     connected    510      full   10G    10GBASE-SR        
+Et5        SNRSCS0511_S1P2                                                       connected    trunk    full   10G    10GBASE-SR        
+Et6        NXC                                                                   disabled     999      full   10G    10GBASE-SR        
+Et7        SNRSCS0513_S1P2                                                       connected    trunk    full   10G    10GBASE-SR        
+Et8        SNRSCS0514_S1P2                                                       notconnect   trunk    full   10G    10GBASE-SR        
+Et9        Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et10       SCSRETLPAL01 mellanox s2p1                                            notconnect   501      full   10G    10GBASE-SR        
+Et11       SCSRETLPAL02 mellanox s2p1                                            notconnect   501      full   10G    10GBASE-SR        
+Et12       SCSRETLPAL250-n1p2                                                    connected    510      full   10G    10GBASE-SR        
+Et13       SCSRETLPAL251-n1p2                                                    connected    510      full   10G    10GBASE-SR        
+Et14       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et15       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et16       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et17       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et18       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et19       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et20       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et21       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et22       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et23       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et24       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et25       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et26       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et27       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et28       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et29       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et30       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et31       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et32       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et33       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et34       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et35       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et36       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et37       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et38       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et39       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et40       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et41       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et42       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et43       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et44       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et45       usnjscshw01ebm01 GiX/Y                                                notconnect   18       full   10G    Not Present       
+Et46       USNJSCSHW01FWRM02_G4/1                                                connected    routed   a-full a-1G   1000BASE-SX       
+Et47       Unused_Ports                                                          disabled     999      full   10G    1000BASE-T        
+Et48       firewall_FLLCCXSCSHWL2_Port5_vrrp-159.5.119.132/29                    connected    301      full   10G    10GBASE-SR        
+Et49       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et50       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et51       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et52       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et53       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et54       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et55       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et56       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et57       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et58       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et59       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et60       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et61       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et62       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et63       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et64       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et65       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et66       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et67       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et68       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et69       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et70       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et71       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et72       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et73       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et74       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et75       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et76       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et77       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et78       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et79       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et80       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et81       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et82       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et83       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et84       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et85       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et86       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et87       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et88       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et89       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et90       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et91       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et92       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et93       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et94       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et95       Unused_Ports                                                          disabled     999      full   10G    Not Present       
+Et96       UPLINK_USNJSCSHW01SRM0002-ptpd_e13                                    connected    routed   full   10G    10GBASE-SR        
+Et97       LNUSNJSCSHW01ALE03_ETH97                                              connected    in Po1   full   40G    40GBASE-CR4       
+Et98       LNUSNJSCSHW01ALE03_ETH98                                              connected    in Po1   full   40G    40GBASE-CR4       
+Et99                                                                             disabled     1        full   40G    Not Present       
+Et100                                                                            disabled     1        full   40G    Not Present       
+Et101                                                                            disabled     1        full   40G    Not Present       
+Et102                                                                            disabled     1        full   40G    Not Present       
+Et103                                                                            disabled     1        full   40G    Not Present       
+Et104                                                                            disabled     1        full   40G    Not Present       
+Ma1        LNUSNJSCSHW01ALR02_g2/1                                               notconnect   routed   unconf unconf 10/100/1000       
+Ma2                                                                              disabled     routed   auto   auto   10/100/1000       
+Po1        CROSSLINK_LNUSNJSCSHW01ALE03_ETH97_ETH98                              connected    trunk    full   80G    N/A               
+Po12       UPLINK_LNUSNJSCSHW01ALR02_TE1/7_TE1/8_adminshut_under_INC000018625475 disabled     trunk    full   unconf N/A            
+LNUSNJSCSHW01ALR02#
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+show inventory
+show inventory
+System information
+  Model                    Description                                          
+  ------------------------ ---------------------------------------------------- 
+  DCS-7050SX-128           96x 10Gb SFP+ + 8x 40Gb QSFP+ 2RU                    
+
+  HW Version  Serial Number  Mfg Date   Epoch 
+  ----------- -------------- ---------- ----- 
+  02.00       JPE13466400    2013-12-21 00.00 
+
+System has 2 power supply slots
+  Slot Model            Serial Number    
+  ---- ---------------- ---------------- 
+  1    PWR-750AC-F      K390M90002AJP    
+  2    PWR-750AC-F      K390M9003WAJP    
+
+System has 4 fan modules
+  Module  Number of Fans  Model            Serial Number    
+  ------- --------------- ---------------- ---------------- 
+  1       1               FAN-7002-F       N/A              
+  2       1               FAN-7002-F       N/A              
+  3       1               FAN-7002-F       N/A              
+  4       1               FAN-7002-F       N/A              
+
+System has 106 ports
+  Type             Count
+  ---------------- ----
+  Management       2   
+  Switched         104 
+
+System has 104 transceiver slots
+  Port Manufacturer     Model            Serial Number    Rev 
+  ---- ---------------- ---------------- ---------------- ----
+  1    Arista Networks  SFP-10G-SR       XCW1322FD178     0002
+  2    Arista Networks  SFP-10G-SR       XCW1322FD2BT     0002
+  3    Arista Networks  SFP-10G-SR       XCW1322FD2KV     0002
+  4    Arista Networks  SFP-10G-SR       XCW1322FD126     0002
+  5    Arista Networks  SFP-10G-SR       XAP1047T3257     0002
+  6    Arista Networks  SFP-10G-SR       XAP1047T3574     0002
+  7    Arista Networks  SFP-10G-SR       XAP1047T3202     0002
+  8    Arista Networks  SFP-10G-SR       XAP1047T3615     0002
+  9    Not Present                                            
+  10   Arista Networks  SFP-10G-SR       XAP1045T3303     0002
+  11   Arista Networks  SFP-10G-SR       XAP1047T3150     0002
+  12   Arista Networks  SFP-10G-SR       XAP1045T3111     0002
+  13   Arista Networks  SFP-10G-SR       XAP1045T3179     0002
+  14   Not Present                                            
+  15   Not Present                                            
+  16   Not Present                                            
+  17   Not Present                                            
+  18   Not Present                                            
+  19   Not Present                                            
+  20   Not Present                                            
+  21   Not Present                                            
+  22   Not Present                                            
+  23   Not Present                                            
+  24   Not Present                                            
+  25   Not Present                                            
+  26   Not Present                                            
+  27   Not Present                                            
+  28   Not Present                                            
+  29   Not Present                                            
+  30   Not Present                                            
+  31   Not Present                                            
+  32   Not Present                                            
+  33   Not Present                                            
+  34   Not Present                                            
+  35   Not Present                                            
+  36   Not Present                                            
+  37   Not Present                                            
+  38   Not Present                                            
+  39   Not Present                                            
+  40   Not Present                                            
+  41   Not Present                                            
+  42   Not Present                                            
+  43   Not Present                                            
+  44   Not Present                                            
+  45   Not Present                                            
+  46   Arista Networks  SFP-1G-SX        XMD1122M2T9R     0002
+  47   Arista Networks  SFP-1G-T         XMD1018MCGVX     0002
+  48   Arista Networks  SFP-10G-SR       XAP1043T2257     0002
+  49   Not Present                                            
+  50   Not Present                                            
+  51   Not Present                                            
+  52   Not Present                                            
+  53   Not Present                                            
+  54   Not Present                                            
+  55   Not Present                                            
+  56   Not Present                                            
+  57   Not Present                                            
+  58   Not Present                                            
+  59   Not Present                                            
+  60   Not Present                                            
+  61   Not Present                                            
+  62   Not Present                                            
+  63   Not Present                                            
+  64   Not Present                                            
+  65   Not Present                                            
+  66   Not Present                                            
+  67   Not Present                                            
+  68   Not Present                                            
+  69   Not Present                                            
+  70   Not Present                                            
+  71   Not Present                                            
+  72   Not Present                                            
+  73   Not Present                                            
+  74   Not Present                                            
+  75   Not Present                                            
+  76   Not Present                                            
+  77   Not Present                                            
+  78   Not Present                                            
+  79   Not Present                                            
+  80   Not Present                                            
+  81   Not Present                                            
+  82   Not Present                                            
+  83   Not Present                                            
+  84   Not Present                                            
+  85   Not Present                                            
+  86   Not Present                                            
+  87   Not Present                                            
+  88   Not Present                                            
+  89   Not Present                                            
+  90   Not Present                                            
+  91   Not Present                                            
+  92   Not Present                                            
+  93   Not Present                                            
+  94   Not Present                                            
+  95   Not Present                                            
+  96   Arista Networks  SFP-10G-SR       XAP1043T2207     0002
+  97   Arista Networks  CAB-Q-Q-1M       XHC1352BG137     01  
+  98   Arista Networks  CAB-Q-Q-1M       XHC1352BG13W     01  
+  99   Not Present                                            
+  100  Not Present                                            
+  101  Not Present                                            
+  102  Not Present                                            
+  103  Not Present                                            
+  104  Not Present                                            
+
+LNUSNJSCSHW01ALR02#
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+show port-channel summary
+show port-channel summary
+
+                  Flags                                                            
+-------------------------- ----------------------------- ------------------------- 
+   a - LACP Active            p - LACP Passive           * - static fallback       
+   F - Fallback enabled       f - Fallback configured    ^ - individual fallback   
+   U - In Use                 D - Down                                             
+   + - In-Sync                - - Out-of-Sync            i - incompatible with agg 
+   P - bundled in Po          s - suspended              G - Aggregable            
+   I - Individual             S - ShortTimeout           w - wait for agg          
+
+Number of channels in use: 1
+Number of aggregators: 1
+
+   Port-Channel       Protocol    Ports                
+------------------ -------------- -------------------- 
+   Po1(U)             LACP(a)     Et97(PG+) Et98(PG+)  
+   Po12(D)            LACP(a)     Et1(D) Et2(D)        
+
+LNUSNJSCSHW01ALR02#
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+show ip bgp summary
+show ip bgp summary
+BGP summary information for VRF default
+Router identifier 159.5.119.184, local AS number 64958
+Neighbor Status Codes: m - Under maintenance
+  Neighbor         V  AS           MsgRcvd   MsgSent  InQ OutQ  Up/Down State  PfxRcd PfxAcc
+  159.5.119.153    4  64958       52091509  52091501    0    0 1808d17h Estab  35     35
+  159.5.119.185    4  4596        50860162  52090779    0    0  313d09h Estab  26     26
+  159.5.119.186    4  4596        50860521  52090853    0    0  313d09h Estab  26     26
+  159.5.119.197    4  64590       76279397  78136975    0    0 1808d17h Estab  1      1
+LNUSNJSCSHW01ALR02#
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+show lldp neighbors
+show lldp neighbors
+Last table change time   : 624 days, 3:01:09 ago
+Number of table inserts  : 19
+Number of table deletes  : 15
+Number of table drops    : 0
+Number of table age-outs : 6
+
+Port       Neighbor Device ID               Neighbor Port ID           TTL
+Et7        a048.1ce4.582d                   a048.1ce4.582d             120
+Et96       USNJSCSHW01SRM0002-ptpd          Ethernet13                 120
+Et97       lnusnjscshw01alr01               Ethernet97                 120
+Et98       lnusnjscshw01alr01               Ethernet98                 120
+LNUSNJSCSHW01ALR02#
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+show interface counters errors
+show interface counters errors
+Port               FCS    Align   Symbol       Rx    Runts   Giants       Tx
+Et1                  0        0        0        0        0        0        0
+Et2                  0        0        0        0        0        0        0
+Et3                  0        0        0        0        0        0        0
+Et4                  0        0        0        0        0        0        0
+Et5                  0        0        0        0        0        0        0
+Et6                  0        0        0        0        0        0        0
+Et7                  0        0        0        0        0        0        0
+Et8                  0        0        0        0        0        0        0
+Et9                  0        0        0        0        0        0        0
+Et10                 0        0        0        0        0        0        0
+Et11                 0        0        0        0        0        0        0
+Et12                 0        0        0        0        0        0        0
+Et13                 0        0        0        0        0        0        0
+Et14                 0        0        0        0        0        0        0
+Et15                 0        0        0        0        0        0        0
+Et16                 0        0        0        0        0        0        0
+Et17                 0        0        0        0        0        0        0
+Et18                 0        0        0        0        0        0        0
+Et19                 0        0        0        0        0        0        0
+Et20                 0        0        0        0        0        0        0
+Et21                 0        0        0        0        0        0        0
+Et22                 0        0        0        0        0        0        0
+Et23                 0        0        0        0        0        0        0
+Et24                 0        0        0        0        0        0        0
+Et25                 0        0        0        0        0        0        0
+Et26                 0        0        0        0        0        0        0
+Et27                 0        0        0        0        0        0        0
+Et28                 0        0        0        0        0        0        0
+Et29                 0        0        0        0        0        0        0
+Et30                 0        0        0        0        0        0        0
+Et31                 0        0        0        0        0        0        0
+Et32                 0        0        0        0        0        0        0
+Et33                 0        0        0        0        0        0        0
+Et34                 0        0        0        0        0        0        0
+Et35                 0        0        0        0        0        0        0
+Et36                 0        0        0        0        0        0        0
+Et37                 0        0        0        0        0        0        0
+Et38                 0        0        0        0        0        0        0
+Et39                 0        0        0        0        0        0        0
+Et40                 0        0        0        0        0        0        0
+Et41                 0        0        0        0        0        0        0
+Et42                 0        0        0        0        0        0        0
+Et43                 0        0        0        0        0        0        0
+Et44                 0        0        0        0        0        0        0
+Et45                 0        0        0        0        0        0        0
+Et46                 0        0        0        0        0        0        0
+Et47                 0        0        0        0        0        0        0
+Et48                 0        0        0        0        0        0        0
+Et49                 0        0        0        0        0        0        0
+Et50                 0        0        0        0        0        0        0
+Et51                 0        0        0        0        0        0        0
+Et52                 0        0        0        0        0        0        0
+Et53                 0        0        0        0        0        0        0
+Et54                 0        0        0        0        0        0        0
+Et55                 0        0        0        0        0        0        0
+Et56                 0        0        0        0        0        0        0
+Et57                 0        0        0        0        0        0        0
+Et58                 0        0        0        0        0        0        0
+Et59                 0        0        0        0        0        0        0
+Et60                 0        0        0        0        0        0        0
+Et61                 0        0        0        0        0        0        0
+Et62                 0        0        0        0        0        0        0
+Et63                 0        0        0        0        0        0        0
+Et64                 0        0        0        0        0        0        0
+Et65                 0        0        0        0        0        0        0
+Et66                 0        0        0        0        0        0        0
+Et67                 0        0        0        0        0        0        0
+Et68                 0        0        0        0        0        0        0
+Et69                 0        0        0        0        0        0        0
+Et70                 0        0        0        0        0        0        0
+Et71                 0        0        0        0        0        0        0
+Et72                 0        0        0        0        0        0        0
+Et73                 0        0        0        0        0        0        0
+Et74                 0        0        0        0        0        0        0
+Et75                 0        0        0        0        0        0        0
+Et76                 0        0        0        0        0        0        0
+Et77                 0        0        0        0        0        0        0
+Et78                 0        0        0        0        0        0        0
+Et79                 0        0        0        0        0        0        0
+Et80                 0        0        0        0        0        0        0
+Et81                 0        0        0        0        0        0        0
+Et82                 0        0        0        0        0        0        0
+Et83                 0        0        0        0        0        0        0
+Et84                 0        0        0        0        0        0        0
+Et85                 0        0        0        0        0        0        0
+Et86                 0        0        0        0        0        0        0
+Et87                 0        0        0        0        0        0        0
+Et88                 0        0        0        0        0        0        0
+Et89                 0        0        0        0        0        0        0
+Et90                 0        0        0        0        0        0        0
+Et91                 0        0        0        0        0        0        0
+Et92                 0        0        0        0        0        0        0
+Et93                 0        0        0        0        0        0        0
+Et94                 0        0        0        0        0        0        0
+Et95                 0        0        0        0        0        0        0
+Et96                 0        0        0        0        0        0        0
+Et97                 0        0        0        0        0        0        0
+Et98                 0        0        0        0        0        0        0
+Et99                 0        0        0        0        0        0        0
+Et100                0        0        0        0        0        0        0
+Et101                0        0        0        0        0        0        0
+Et102                0        0        0        0        0        0        0
+Et103                0        0        0        0        0        0        0
+Et104                0        0        0        0        0        0        0
+Ma1                  0        0        0        0        0        0        0
+Ma2                  0        0        0        0        0        0        0
+LNUSNJSCSHW01ALR02#
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+show running-config
+show running-config
+! Command: show running-config
+! device: LNUSNJSCSHW01ALR02 (DCS-7050SX-128, EOS-4.18.2-REV2-FX.1)
+!
+! boot system flash:/EOS-4.18.2-REV2-FX.1.swi
+!
+daemon discards
+   exec /mnt/flash/bac/discards.py 
+   no shutdown
+!
+daemon ptpoffset
+   exec /mnt/flash/bac/ptpoffset.py --caution 5000 --offset 100000 --sleep 10
+   no shutdown
+!
+transceiver qsfp default-mode 4x10G
+!
+ip pim sparse-mode sg-expiry-timer 120
+ip pim rp-address 159.5.119.177 access-list 40
+!
+logging buffered 128000 informational
+no logging console
+logging host 165.36.211.12
+logging host 171.134.10.26
+logging host 171.134.12.15
+logging host 171.188.15.12
+logging host 206.143.94.227
+logging host 206.143.94.234
+logging host 206.143.94.239
+logging facility local7
+!
+logging level ACL informational
+logging level AGENT informational
+logging level ENVMON informational
+logging level ETH informational
+logging level EXTENSION informational
+logging level FRU informational
+logging level FWK informational
+logging level HARDWARE informational
+logging level IGMPSNOOPING informational
+logging level INTF informational
+logging level LACP informational
+logging level LAUNCHER informational
+logging level LINEPROTO informational
+logging level MIRRORING informational
+logging level MLAG informational
+logging level OSPF informational
+logging level PWRMGMT informational
+logging level REDUNDANCY informational
+logging level SPANTREE informational
+logging level SYS informational
+logging level SYSDB informational
+logging level TRANSCEIVER informational
+logging level VRRP informational
+!
+hostname LNUSNJSCSHW01ALR02
+!
+ntp server 171.140.4.138 prefer
+ntp server 171.172.3.251
+!
+ptp mode boundary
+!
+snmp-server engineID local f5717f001c7357200e00
+snmp-server contact 20110429,BA0000000
+snmp-server location NJ1-200,EQUINIX DATACENTER NY2,275 HARTZ WAY,SECAUCUS,NJ,07094
+snmp-server view allowall internet included
+snmp-server view readonly internet included
+snmp-server group TRAP-NO-PRIV v3 auth
+snmp-server group TRAPS v3 priv read allowall
+snmp-server group network-admin v3 priv write allowall
+snmp-server group network-operator v3 priv read readonly
+snmp-server user AuthPrivTrap8 TRAPS v3 localized f5717f001c7357200e00 auth sha 3526f3053ffc2a362c3ed15d502acf6099d0c36a priv aes ea884920dd6bdaffc92ca80176e07f3f574e5906
+snmp-server user AuthTrap7 TRAP-NO-PRIV v3 localized f5717f001c7357200e00 auth sha e65e568f5bd23d38782e935a88bd02cbf07194c7
+snmp-server user ChangeBank3 network-admin v3 localized f5717f001c7357200e00 auth sha f27a63eb4546e975abb2d765eaffaabd8bc182b3 priv aes 3fc26637a5773d956eb0a51ed21fb6ab7b7f30ab
+snmp-server user RunBank2 network-operator v3 localized f5717f001c7357200e00 auth sha 7e3ddc25db311c80fa07425b4f3753a938b9cd5e priv aes fb91945065b74c4bc407faa3af60ea2025f4d0a0
+snmp-server host 158.171.231.27 version 3 auth AuthTrap7
+snmp-server host 165.36.194.131 version 3 auth AuthTrap7
+snmp-server host 165.36.211.14 version 3 priv AuthPrivTrap8
+snmp-server host 171.188.15.14 version 3 priv AuthPrivTrap8
+snmp-server host 206.143.94.224 version 3 auth AuthTrap7
+snmp-server enable traps
+snmp-server enable traps bgp
+snmp-server enable traps entity
+snmp-server enable traps snmp
+!
+spanning-tree mode rapid-pvst
+spanning-tree portfast bpduguard default
+spanning-tree vlan 5,101,301,501,503,510-511 priority 8192
+spanning-tree vlan 502,504 priority 4096
+!
+tacacs-server key 7 0505071B2843401A485744111809073F3921
+tacacs-server timeout 3
+tacacs-server host 165.36.15.173
+tacacs-server host 165.36.15.174
+tacacs-server host 171.187.36.28
+tacacs-server host 171.130.2.116
+tacacs-server host 171.130.2.117
+tacacs-server host 171.171.2.116
+!
+aaa authentication login default group tacacs+ local
+aaa authentication login console group tacacs+ local
+aaa authentication enable default group tacacs+ local
+aaa authorization exec default group tacacs+ local
+aaa authorization commands 0-1,15 default group tacacs+ local
+aaa accounting exec default stop-only group tacacs+
+aaa accounting commands 1 default stop-only group tacacs+
+aaa accounting commands 15 default start-stop group tacacs+
+!
+enable secret sha512 $6$/5onJwos3VSN/.2P$pbTcBET1cF79DtHXCaelgFN/vjrDGvtwNewWkOdgZ0OfcWQ2ZPTUsPkWDNJ1rXBkxkEczqJpYGErr0u9FumBM.
+no aaa root
+!
+username admin role network-admin secret 5 $1$GgQ5kVUa$LUBwjfvZXzkv/zqXZVkUt/
+!
+clock timezone GMT0
+!
+vlan 5
+   name CROSSLINK_159.5.119.152/30
+!
+vlan 18
+!
+vlan 101
+   name LLCC1_MGMT_159.5.119.136/29
+!
+vlan 301
+   name LLCC1_159.5.119.128/29
+!
+vlan 501
+   name 10G_SERVERS_159.5.116.0/26
+!
+vlan 502
+   name 10G_SERVERS_159.5.116.64/26
+!
+vlan 503
+   name 10G_SERVERS_159.5.116.128/26
+!
+vlan 504
+   name 10G_SERVERS_159.5.116.192/26
+!
+vlan 510
+   name 10G_SERVERS_165.37.175.0/24
+!
+vlan 511
+   name SunriseVM_165.37.174.0/24
+!
+vlan 999
+   name Unused_Ports
+!
+interface Port-Channel1
+   description CROSSLINK_LNUSNJSCSHW01ALE03_ETH97_ETH98
+   load-interval 30
+   switchport trunk native vlan 510
+   switchport trunk allowed vlan 5,301,501-504,510-511
+   switchport mode trunk
+   ip pim sparse-mode
+!
+interface Port-Channel12
+   description UPLINK_LNUSNJSCSHW01ALR02_TE1/7_TE1/8_adminshut_under_INC000018625475
+   shutdown
+   load-interval 30
+   switchport trunk native vlan 510
+   switchport trunk allowed vlan 510-511
+   switchport mode trunk
+!
+interface Ethernet1
+   description LNUSNJSCSHW01ALR02_TE1/7_adminshut_under_INC000018625475
+   shutdown
+   load-interval 30
+   speed forced 10000full
+   channel-group 12 mode active
+!
+interface Ethernet2
+   description LNUSNJSCSHW01ALR02_TE1/8_adminshut_under_INC000018625475
+   shutdown
+   load-interval 30
+   speed forced 10000full
+   channel-group 12 mode active
+!
+interface Ethernet3
+   description SCSRETLDAP01-n2p1
+   no logging event link-status
+   switchport access vlan 510
+   no snmp trap link-status
+   ptp enable
+   ptp sync interval -1
+   ptp delay-req interval -1
+   spanning-tree portfast
+!
+interface Ethernet4
+   description SCSRETLDAP02-n2p1
+   no logging event link-status
+   switchport access vlan 510
+   no snmp trap link-status
+   ptp enable
+   ptp sync interval -1
+   ptp delay-req interval -1
+   spanning-tree portfast
+!
+interface Ethernet5
+   description SNRSCS0511_S1P2
+   no logging event link-status
+   speed forced 10000full
+   switchport trunk native vlan 510
+   switchport trunk allowed vlan 510-511
+   switchport mode trunk
+   no snmp trap link-status
+   ptp enable
+   ptp sync interval -1
+   ptp delay-req interval -1
+   spanning-tree portfast
+!
+interface Ethernet6
+   description NXC
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   ptp enable
+   ptp sync interval -1
+   ptp delay-req interval -1
+   spanning-tree portfast
+!
+interface Ethernet7
+   description SNRSCS0513_S1P2
+   no logging event link-status
+   speed forced 10000full
+   switchport trunk native vlan 510
+   switchport trunk allowed vlan 510-511
+   switchport mode trunk
+   no snmp trap link-status
+   ptp enable
+   ptp sync interval -1
+   ptp delay-req interval -1
+   spanning-tree portfast
+!
+interface Ethernet8
+   description SNRSCS0514_S1P2
+   no logging event link-status
+   speed forced 10000full
+   switchport trunk native vlan 510
+   switchport trunk allowed vlan 510-511
+   switchport mode trunk
+   no snmp trap link-status
+   ptp enable
+   ptp sync interval -1
+   ptp delay-req interval -1
+   spanning-tree portfast
+!
+interface Ethernet9
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet10
+   description SCSRETLPAL01 mellanox s2p1
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 501
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet11
+   description SCSRETLPAL02 mellanox s2p1
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 501
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet12
+   description SCSRETLPAL250-n1p2
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 510
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet13
+   description SCSRETLPAL251-n1p2
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 510
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet14
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet15
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet16
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet17
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet18
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet19
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet20
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet21
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet22
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet23
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet24
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet25
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet26
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet27
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet28
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet29
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet30
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet31
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet32
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet33
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet34
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet35
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet36
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet37
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet38
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet39
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet40
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet41
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet42
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet43
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet44
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet45
+   description usnjscshw01ebm01 GiX/Y
+   load-interval 30
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 18
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet46
+   description USNJSCSHW01FWRM02_G4/1
+   no logging event link-status
+   speed auto
+   no switchport
+   no snmp trap link-status
+   ip address 159.5.119.198/30
+!
+interface Ethernet47
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet48
+   description firewall_FLLCCXSCSHWL2_Port5_vrrp-159.5.119.132/29
+   load-interval 30
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 301
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet49
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet50
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet51
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet52
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet53
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet54
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet55
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet56
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet57
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet58
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet59
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet60
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet61
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet62
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet63
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet64
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet65
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet66
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet67
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet68
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet69
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet70
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet71
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet72
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet73
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet74
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet75
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet76
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet77
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet78
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet79
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet80
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet81
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet82
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet83
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet84
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet85
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet86
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet87
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet88
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet89
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet90
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet91
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet92
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet93
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet94
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet95
+   description Unused_Ports
+   shutdown
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no snmp trap link-status
+   spanning-tree portfast
+!
+interface Ethernet96
+   description UPLINK_USNJSCSHW01SRM0002-ptpd_e13
+   no logging event link-status
+   speed forced 10000full
+   switchport access vlan 999
+   no switchport
+   no snmp trap link-status
+   ip address 171.185.176.151/31
+   ptp enable
+   ptp sync interval -1
+   ptp delay-req interval -1
+   spanning-tree portfast
+!
+interface Ethernet97
+   description LNUSNJSCSHW01ALE03_ETH97
+   load-interval 30
+   speed forced 40gfull
+   channel-group 1 mode active
+!
+interface Ethernet98
+   description LNUSNJSCSHW01ALE03_ETH98
+   load-interval 30
+   speed forced 40gfull
+   channel-group 1 mode active
+!
+interface Ethernet99
+   shutdown
+   speed forced 40gfull
+!
+interface Ethernet100
+   shutdown
+   speed forced 40gfull
+!
+interface Ethernet101
+   shutdown
+   speed forced 40gfull
+!
+interface Ethernet102
+   shutdown
+   speed forced 40gfull
+!
+interface Ethernet103
+   shutdown
+   speed forced 40gfull
+!
+interface Ethernet104
+   shutdown
+   speed forced 40gfull
+!
+interface Loopback0
+   description Router Integrity Enterprise Template rollout for BOA AUDIT Feb 2005
+   ip address 159.5.119.178/32
+!
+interface Loopback1
+   description LLCC1_BGP_PEER
+   ip address 159.5.119.184/32
+!
+interface Management1
+   description LNUSNJSCSHW01ALR02_g2/1
+   speed forced 100full
+   ip address 159.5.119.231/28
+!
+interface Management2
+   shutdown
+!
+interface Vlan1
+   shutdown
+!
+interface Vlan5
+   description CROSSLINK_159.5.119.154/30
+   load-interval 30
+   ip address 159.5.119.154/30
+   ip pim sparse-mode
+!
+interface Vlan101
+   description LLCC1_FW_MGMT_159.5.119.136/29
+   mtu 9000
+   ip address 159.5.119.139/29
+   ip virtual-router address 159.5.119.137
+!
+interface Vlan301
+   description LLCC1_159.5.119.128/29
+   load-interval 30
+   ip address 159.5.119.131/29
+   ip virtual-router address 159.5.119.129
+!
+interface Vlan501
+   description SERVERS_VLAN501_ALE01_ALE02_159.5.116.0/26
+   mtu 9000
+   ip address 159.5.116.3/26
+   ip helper-address 165.48.113.142
+   ip helper-address 171.140.4.138
+   ip helper-address 171.163.3.248
+   ip helper-address 171.172.3.251
+   ip helper-address 171.200.130.132
+   ip pim sparse-mode
+   ip pim query-interval 1
+   ip virtual-router address 159.5.116.1
+!
+interface Vlan502
+   description SERVERS_VLAN502_ALE01_ALE02_159.5.116.64/26
+   load-interval 30
+   mtu 9000
+   ip address 159.5.116.67/26
+   ip helper-address 165.48.113.142
+   ip helper-address 171.140.4.138
+   ip helper-address 171.163.3.248
+   ip helper-address 171.172.3.251
+   ip helper-address 171.200.130.132
+   ip pim sparse-mode
+   ip pim query-interval 1
+   ip virtual-router address 159.5.116.65
+!
+interface Vlan503
+   description SERVERS_VLAN503_ALE01_ALE02_159.5.116.128/26
+   load-interval 30
+   mtu 9000
+   ip address 159.5.116.131/26
+   ip helper-address 165.48.113.142
+   ip helper-address 171.140.4.138
+   ip helper-address 171.163.3.248
+   ip helper-address 171.172.3.251
+   ip helper-address 171.200.130.132
+   ip pim sparse-mode
+   ip pim query-interval 1
+   ip virtual-router address 159.5.116.129
+!
+interface Vlan504
+   description SERVERS_VLAN504_ALE01_ALE02_159.5.116.192/26
+   load-interval 30
+   mtu 9000
+   ip address 159.5.116.195/26
+   ip helper-address 165.48.113.142
+   ip helper-address 171.140.4.138
+   ip helper-address 171.163.3.248
+   ip helper-address 171.172.3.251
+   ip helper-address 171.200.130.132
+   ip pim sparse-mode
+   ip pim query-interval 1
+   ip virtual-router address 159.5.116.193
+!
+interface Vlan510
+   description SERVERS_VLAN510_165.37.175.0/24
+   load-interval 30
+   mtu 9000
+   ip address 165.37.175.3/24
+   ip helper-address 30.133.30.206
+   ip helper-address 30.141.247.134
+   ip helper-address 165.36.11.55
+   ip helper-address 171.150.145.125
+   ip pim sparse-mode
+   ip pim query-interval 1
+   vrrp 10 timers advertise 3
+   vrrp 10 authentication text OU81to
+   vrrp 10 ip 165.37.175.1
+!
+interface Vlan511
+   description SunriseVM_165.37.174.0/24
+   load-interval 30
+   mtu 9000
+   ip address 165.37.174.3/24
+   ip helper-address 30.133.30.206
+   ip helper-address 30.141.247.134
+   ip helper-address 165.36.11.55
+   ip helper-address 171.150.145.125
+   ip pim sparse-mode
+   ip pim query-interval 1
+   ip virtual-router address 165.37.174.1
+!
+mac address-table aging-time 14400
+!
+ip virtual-router mac-address 00:1c:73:00:00:99
+!
+ip access-list mgmtptp-control-plane-acl
+   10 permit udp host 171.172.201.157 host 159.5.119.231 eq snmp
+   20 permit udp host 171.172.201.157 host 159.5.119.231 eq snmptrap
+   30 permit udp host 171.172.201.158 host 159.5.119.231 eq snmp
+   40 permit udp host 171.172.201.158 host 159.5.119.231 eq snmptrap
+   50 permit udp host 171.172.201.159 host 159.5.119.231 eq snmp
+   60 permit udp host 171.172.201.159 host 159.5.119.231 eq snmptrap
+   70 permit udp host 171.172.201.160 host 159.5.119.231 eq snmp
+   80 permit udp host 171.172.201.160 host 159.5.119.231 eq snmptrap
+   90 permit udp host 171.172.201.161 host 159.5.119.231 eq snmp
+   100 permit udp host 171.172.201.161 host 159.5.119.231 eq snmptrap
+   110 permit udp 171.172.191.0/28 host 159.5.119.231 eq snmp
+   120 permit udp 171.172.191.0/28 host 159.5.119.231 eq snmptrap
+   130 permit udp host 165.48.14.237 host 159.5.119.231 eq snmp
+   140 permit udp host 165.48.14.237 host 159.5.119.231 eq snmptrap
+   150 permit udp host 165.48.14.249 host 159.5.119.231 eq snmp
+   160 permit udp host 165.48.14.249 host 159.5.119.231 eq snmptrap
+   170 permit udp 171.130.2.64/26 host 159.5.119.231 eq snmp
+   180 permit udp 171.130.2.64/26 host 159.5.119.231 eq snmptrap
+   190 permit udp host 171.133.133.101 host 159.5.119.231 eq snmp
+   200 permit udp host 171.133.133.101 host 159.5.119.231 eq snmptrap
+   210 permit udp host 171.133.133.102 host 159.5.119.231 eq snmp
+   220 permit udp host 171.133.133.102 host 159.5.119.231 eq snmptrap
+   230 permit udp host 171.133.133.108 host 159.5.119.231 eq snmp
+   240 permit udp host 171.133.133.108 host 159.5.119.231 eq snmptrap
+   250 permit udp host 171.133.133.46 host 159.5.119.231 eq snmp
+   260 permit udp host 171.133.133.46 host 159.5.119.231 eq snmptrap
+   270 permit udp host 171.133.216.242 host 159.5.119.231 eq snmp
+   280 permit udp host 171.133.216.242 host 159.5.119.231 eq snmptrap
+   290 permit udp 171.171.2.64/26 host 159.5.119.231 eq snmp
+   300 permit udp 171.171.2.64/26 host 159.5.119.231 eq snmptrap
+   310 permit udp host 171.172.201.188 host 159.5.119.231 eq snmp
+   320 permit udp host 171.172.201.188 host 159.5.119.231 eq snmptrap
+   330 permit udp host 171.177.120.13 host 159.5.119.231 eq snmp
+   340 permit udp host 171.177.120.13 host 159.5.119.231 eq snmptrap
+   350 permit udp host 171.177.120.24 host 159.5.119.231 eq snmp
+   360 permit udp host 171.177.120.24 host 159.5.119.231 eq snmptrap
+   370 permit udp host 171.177.120.52 host 159.5.119.231 eq snmp
+   380 permit udp host 171.177.120.52 host 159.5.119.231 eq snmptrap
+   390 permit udp host 171.189.187.110 host 159.5.119.231 eq snmp
+   400 permit udp host 171.189.187.110 host 159.5.119.231 eq snmptrap
+   410 permit udp host 171.189.187.111 host 159.5.119.231 eq snmp
+   420 permit udp host 171.189.187.111 host 159.5.119.231 eq snmptrap
+   430 permit udp host 171.189.187.112 host 159.5.119.231 eq snmp
+   440 permit udp host 171.189.187.112 host 159.5.119.231 eq snmptrap
+   450 permit udp host 171.189.55.235 host 159.5.119.231 eq snmp
+   460 permit udp host 171.189.55.235 host 159.5.119.231 eq snmptrap
+   470 permit udp host 165.48.14.234 host 159.5.119.231 eq snmp
+   480 permit udp host 171.130.2.91 host 159.5.119.231 eq snmp
+   490 permit udp host 171.130.2.93 host 159.5.119.231 eq snmp
+   500 permit udp host 171.160.216.11 host 159.5.119.231 eq snmp
+   510 permit udp host 171.164.182.185 host 159.5.119.231 eq snmp
+   520 permit udp host 171.171.2.81 host 159.5.119.231 eq snmp
+   530 permit udp 171.173.112.0/25 host 159.5.119.231 eq snmp
+   540 permit udp 171.174.12.128/26 host 159.5.119.231 eq snmp
+   550 permit udp host 171.177.120.11 host 159.5.119.231 eq snmp
+   560 permit udp host 171.177.122.23 host 159.5.119.231 eq snmp
+   570 permit udp host 171.177.184.6 host 159.5.119.231 eq snmp
+   580 permit udp host 171.177.217.12 host 159.5.119.231 eq snmp
+   590 permit udp host 171.186.1.208 host 159.5.119.231 eq snmp
+   600 permit udp 171.186.62.128/26 host 159.5.119.231 eq snmp
+   610 permit udp host 171.186.137.120 host 159.5.119.231 eq snmp
+   620 permit udp host 171.186.137.121 host 159.5.119.231 eq snmp
+   630 permit udp host 171.186.137.124 host 159.5.119.231 eq snmp
+   640 permit udp host 171.186.137.125 host 159.5.119.231 eq snmp
+   650 permit udp host 171.186.200.36 host 159.5.119.231 eq snmp
+   660 permit udp host 171.186.246.250 host 159.5.119.231 eq snmp
+   670 permit udp host 171.189.186.191 host 159.5.119.231 eq snmp
+   680 permit udp host 171.189.140.250 host 159.5.119.231 eq snmp
+   690 permit udp host 171.189.140.251 host 159.5.119.231 eq snmp
+   700 permit udp host 171.197.140.182 host 159.5.119.231 eq snmp
+   710 permit udp host 171.197.140.183 host 159.5.119.231 eq snmp
+   720 permit udp host 171.197.140.184 host 159.5.119.231 eq snmp
+   730 permit udp host 171.197.140.185 host 159.5.119.231 eq snmp
+   740 permit udp host 171.197.141.207 host 159.5.119.231 eq snmp
+   750 permit udp host 171.197.141.208 host 159.5.119.231 eq snmp
+   760 permit udp host 171.197.141.209 host 159.5.119.231 eq snmp
+   770 permit udp host 171.197.141.210 host 159.5.119.231 eq snmp
+   780 permit udp 171.197.164.64/26 host 159.5.119.231 eq snmp
+   790 permit udp host 171.197.47.121 host 159.5.119.231 eq snmp
+   800 permit udp host 171.197.47.122 host 159.5.119.231 eq snmp
+   810 permit udp host 171.197.48.28 host 159.5.119.231 eq snmp
+   820 permit udp host 171.197.60.35 host 159.5.119.231 eq snmp
+   830 permit udp host 171.197.60.36 host 159.5.119.231 eq snmp
+   840 permit udp host 171.197.60.37 host 159.5.119.231 eq snmp
+   850 permit udp host 171.197.60.38 host 159.5.119.231 eq snmp
+   860 permit udp host 171.197.60.4 host 159.5.119.231 eq snmp
+   870 permit udp host 171.197.60.5 host 159.5.119.231 eq snmp
+   880 permit udp host 171.199.137.15 host 159.5.119.231 eq snmp
+   890 permit udp host 171.199.137.16 host 159.5.119.231 eq snmp
+   900 permit udp host 165.48.14.234 host 159.5.119.231 eq snmptrap
+   910 permit udp host 171.130.2.91 host 159.5.119.231 eq snmptrap
+   920 permit udp host 171.130.2.93 host 159.5.119.231 eq snmptrap
+   930 permit udp host 171.160.216.11 host 159.5.119.231 eq snmptrap
+   940 permit udp host 171.164.182.185 host 159.5.119.231 eq snmptrap
+   950 permit udp host 171.171.2.81 host 159.5.119.231 eq snmptrap
+   960 permit udp 171.173.112.0/25 host 159.5.119.231 eq snmptrap
+   970 permit udp 171.174.12.128/26 host 159.5.119.231 eq snmptrap
+   980 permit udp host 171.177.120.11 host 159.5.119.231 eq snmptrap
+   990 permit udp host 171.177.122.23 host 159.5.119.231 eq snmptrap
+   1000 permit udp host 171.177.184.6 host 159.5.119.231 eq snmptrap
+   1010 permit udp host 171.177.217.12 host 159.5.119.231 eq snmptrap
+   1020 permit udp host 171.186.1.208 host 159.5.119.231 eq snmptrap
+   1030 permit udp 171.186.62.128/26 host 159.5.119.231 eq snmptrap
+   1040 permit udp host 171.186.137.120 host 159.5.119.231 eq snmptrap
+   1050 permit udp host 171.186.137.121 host 159.5.119.231 eq snmptrap
+   1060 permit udp host 171.186.137.124 host 159.5.119.231 eq snmptrap
+   1061 permit udp 165.36.51.0/24 host 159.5.119.231 eq snmp
+   1062 permit udp 165.36.50.0/24 host 159.5.119.231 eq snmp
+   1063 permit udp host 159.5.119.231 165.36.50.0/24 eq snmptrap
+   1064 permit udp host 159.5.119.231 165.36.51.0/24 eq snmptrap
+   1070 permit udp host 171.186.137.125 host 159.5.119.231 eq snmptrap
+   1080 permit udp host 171.186.200.36 host 159.5.119.231 eq snmptrap
+   1090 permit udp host 171.186.246.250 host 159.5.119.231 eq snmptrap
+   1100 permit udp host 171.189.186.191 host 159.5.119.231 eq snmptrap
+   1110 permit udp host 171.189.140.250 host 159.5.119.231 eq snmptrap
+   1120 permit udp host 171.189.140.251 host 159.5.119.231 eq snmptrap
+   1130 permit udp host 171.197.140.182 host 159.5.119.231 eq snmptrap
+   1140 permit udp host 171.197.140.183 host 159.5.119.231 eq snmptrap
+   1150 permit udp host 171.197.140.184 host 159.5.119.231 eq snmptrap
+   1160 permit udp host 171.197.140.185 host 159.5.119.231 eq snmptrap
+   1170 permit udp host 171.197.141.207 host 159.5.119.231 eq snmptrap
+   1180 permit udp host 171.197.141.208 host 159.5.119.231 eq snmptrap
+   1190 permit udp host 171.197.141.209 host 159.5.119.231 eq snmptrap
+   1200 permit udp host 171.197.141.210 host 159.5.119.231 eq snmptrap
+   1210 permit udp 171.197.164.64/26 host 159.5.119.231 eq snmptrap
+   1220 permit udp host 171.197.47.121 host 159.5.119.231 eq snmptrap
+   1230 permit udp host 171.197.47.122 host 159.5.119.231 eq snmptrap
+   1240 permit udp host 171.197.48.28 host 159.5.119.231 eq snmptrap
+   1250 permit udp host 171.197.60.35 host 159.5.119.231 eq snmptrap
+   1260 permit udp host 171.197.60.36 host 159.5.119.231 eq snmptrap
+   1270 permit udp host 171.197.60.37 host 159.5.119.231 eq snmptrap
+   1280 permit udp host 171.197.60.38 host 159.5.119.231 eq snmptrap
+   1290 permit udp host 171.197.60.4 host 159.5.119.231 eq snmptrap
+   1300 permit udp host 171.197.60.5 host 159.5.119.231 eq snmptrap
+   1310 permit udp host 171.199.137.15 host 159.5.119.231 eq snmptrap
+   1320 permit udp host 171.199.137.16 host 159.5.119.231 eq snmptrap
+   1330 deny tcp any any eq snmp
+   1340 deny tcp any any eq snmptrap
+   1350 deny udp any any eq snmp
+   1360 deny udp any any eq snmptrap
+   1370 permit icmp any any
+   1380 permit ip any any tracked
+   1390 permit ospf any any
+   1400 permit udp any any eq ptp-event
+   1410 permit udp any any eq ptp-general
+   1420 permit tcp any any eq ssh telnet www snmp bgp https
+   1430 permit udp any any eq bootps bootpc snmp
+   1440 permit tcp any any eq mlag ttl eq 255
+   1450 permit udp any any eq mlag ttl eq 255
+   1460 permit vrrp any any
+   1470 permit ahp any any
+   1480 permit pim any any
+   1490 permit igmp any any
+   1500 permit tcp any any range 5900 5910
+   1510 permit tcp any any eq tacacs
+   1520 permit udp any any eq tacacs
+!
+ip access-list standard 33
+   10 permit 158.171.231.0/26
+   20 permit 171.188.15.0/24
+   30 permit 165.36.211.0/24
+   40 permit 171.194.74.192/26
+   50 permit 158.171.222.0/23
+   60 permit 167.202.252.0/23
+   70 permit 165.32.196.0/23
+   80 permit 164.91.132.0/23
+   90 permit host 165.32.198.22
+   100 permit 171.187.182.0/23
+   110 permit 165.36.50.0/24
+   120 permit 158.171.54.0/23
+   130 permit 165.36.194.128/26
+   140 permit 30.185.39.128/25
+   150 permit 30.185.37.128/25
+   160 permit 30.185.38.128/25
+   170 permit 30.185.40.128/25
+   180 permit 158.171.208.0/21
+   190 permit 171.128.220.0/22
+   200 permit 165.36.8.0/21
+   210 permit 158.171.144.0/24
+   220 permit 171.174.12.128/26
+   230 permit 171.187.70.0/23
+   240 permit 165.37.48.0/23
+   250 permit 158.171.96.0/23
+   260 permit 171.128.176.0/22
+   270 permit 167.202.12.0/23
+   280 permit 158.171.64.0/21
+   290 permit 170.242.38.0/23
+   300 permit 158.171.248.0/23
+   310 permit 171.187.0.0/21
+   320 permit host 171.160.216.11
+   330 permit 165.37.50.0/23
+   340 permit 206.143.112.0/24
+   350 permit 165.163.248.0/23
+   360 permit 171.128.188.0/22
+   370 permit 165.36.194.96/27
+   380 permit 10.40.195.0/25
+   390 permit 165.163.250.0/23
+   400 permit 158.171.236.0/23
+   410 permit host 171.135.32.173
+   420 permit host 171.135.44.56
+   430 permit host 171.135.49.37
+   440 permit host 171.135.57.73
+   450 permit host 171.135.65.162
+   460 permit host 171.135.96.220
+   470 permit host 171.135.97.209
+   480 permit host 171.135.113.64
+   490 permit host 171.186.243.103
+   500 permit host 171.186.243.120
+   510 permit host 164.91.192.95
+   520 permit host 164.91.192.98
+   530 permit host 171.205.171.252
+   540 permit host 171.206.199.253
+   550 permit host 171.196.87.252
+   560 permit host 30.132.139.248
+   570 permit host 171.196.71.248
+   580 permit host 171.196.71.249
+   590 permit host 171.196.71.250
+   600 permit host 171.196.71.251
+   610 permit host 171.196.71.252
+   620 permit host 171.196.27.252
+   630 permit host 171.196.3.247
+   640 permit host 171.196.3.248
+   650 permit host 171.196.7.246
+   660 permit host 171.196.7.247
+   670 permit host 171.196.7.248
+   680 permit host 171.196.7.249
+   690 permit host 171.196.7.250
+   700 permit host 171.196.11.246
+   710 permit host 171.196.11.247
+   720 permit host 171.196.11.248
+   730 permit host 171.196.11.249
+   740 permit host 171.196.11.250
+   750 permit 171.188.4.96/27
+   760 permit 171.188.4.128/27
+   770 permit 171.186.68.96/27
+   780 permit 171.186.68.128/27
+   790 permit 171.186.68.160/27
+   800 permit host 30.123.68.198
+   810 permit host 30.132.135.136
+   820 permit host 30.195.169.188
+   830 permit host 165.40.35.32
+   840 permit host 171.196.73.146
+   850 permit host 171.196.74.153
+   860 permit host 171.196.107.45
+   870 permit host 171.205.134.39
+   880 permit host 30.123.65.168
+   890 permit host 30.123.64.14
+   900 permit host 30.123.67.187
+   910 permit host 30.123.66.228
+   920 permit host 30.123.65.53
+   930 permit host 171.196.75.75
+   940 permit host 171.196.72.119
+   950 permit host 30.132.129.156
+   960 permit host 171.196.72.202
+   970 permit host 171.196.74.205
+   980 permit host 30.123.65.206
+   990 permit host 30.123.67.23
+   1000 permit host 30.123.66.30
+   1010 permit host 30.123.66.233
+   1020 permit host 30.123.66.177
+   1030 permit host 30.123.65.3
+   1040 permit host 30.123.64.112
+   1050 permit host 171.203.234.238
+   1060 permit host 171.205.155.115
+   1070 permit host 171.203.232.28
+   1080 permit host 171.205.152.104
+   1090 permit host 171.203.234.61
+   1100 permit host 171.203.234.84
+   1110 permit host 171.205.152.20
+   1120 permit host 165.40.13.183
+   1130 permit 141.128.237.192/26
+   1140 permit 158.171.136.0/24
+   1150 permit 158.171.168.0/23
+   1160 permit 158.171.221.0/24
+   1170 permit 165.36.102.0/23
+   1180 permit 171.130.2.64/26
+   1190 permit 171.171.2.64/26
+   1200 permit 171.185.201.0/24
+   1210 permit 171.187.8.0/21
+   1220 permit 171.187.98.0/23
+   1230 permit 171.187.136.0/23
+   1240 permit 171.194.111.192/26
+   1250 permit host 164.91.15.94
+   1260 permit host 30.195.171.225
+   1270 permit host 165.40.34.45
+   1280 permit host 30.196.2.113
+   1290 permit host 165.40.37.234
+   1300 permit host 165.40.37.237
+   1310 permit host 165.41.28.224
+   1320 permit host 165.40.37.231
+   1330 permit 171.179.198.192/27
+   1340 permit 171.179.199.192/27
+   1350 permit host 171.206.225.29
+   1360 permit host 171.203.17.108
+   1370 permit host 171.203.14.144
+   1380 permit host 171.206.227.100
+   1390 permit host 171.206.227.101
+   1400 permit host 171.203.3.202
+   1410 permit host 171.203.3.205
+   1420 permit host 171.203.30.110
+   1430 permit host 171.203.30.111
+   1440 permit host 171.203.41.130
+   1450 permit host 171.196.88.51
+   1460 permit host 171.203.49.181
+   1470 permit host 171.196.72.75
+   1480 permit host 30.103.236.10
+   1490 permit host 30.103.236.11
+   1500 permit host 30.103.236.12
+   1510 permit host 30.103.236.13
+   1520 permit host 30.103.236.14
+   1530 permit host 30.103.236.15
+   1540 permit host 30.103.236.16
+   1550 permit host 30.103.236.17
+   1560 permit host 30.103.236.18
+   1570 permit host 30.103.236.19
+   1580 permit host 30.103.236.20
+   1590 permit host 30.103.236.21
+   1600 permit host 30.103.236.22
+   1610 permit host 30.103.236.23
+   1620 permit host 30.103.236.24
+   1630 permit host 30.103.236.25
+   1640 permit host 30.103.236.26
+   1650 permit host 30.103.236.27
+   1660 permit host 30.103.236.28
+   1670 permit host 30.103.236.29
+   1680 permit host 30.103.236.30
+   1690 permit host 30.103.236.31
+   1700 permit host 30.103.236.32
+   1710 permit host 30.103.236.33
+   1720 permit host 30.103.236.34
+   1730 permit host 30.103.236.35
+   1740 permit host 30.103.236.36
+   1750 permit host 30.103.236.37
+   1760 permit host 30.103.236.38
+   1770 permit host 30.103.236.39
+   1780 permit host 30.103.236.40
+   1790 permit host 30.103.236.41
+   1800 permit host 30.103.236.42
+   1810 permit host 30.103.236.43
+   1820 permit host 30.103.236.44
+   1830 permit host 30.103.236.45
+   1840 permit host 30.103.236.46
+   1850 permit host 30.103.236.47
+   1860 permit host 30.103.236.48
+   1870 permit host 30.103.236.49
+   1880 permit host 30.103.236.50
+   1890 permit host 165.40.146.221
+   1900 permit host 165.40.146.222
+   1910 permit host 30.195.55.241
+   1920 permit host 30.195.55.242
+   1930 permit host 30.195.91.241
+   1940 permit host 30.195.91.242
+   1950 permit host 165.40.36.12
+   1960 permit host 165.40.36.13
+   1970 permit host 171.196.67.253
+   1980 permit host 171.196.67.248
+   1990 permit host 30.132.139.244
+   2000 permit host 30.132.139.245
+   2010 permit host 30.132.139.246
+   2020 permit host 30.132.139.247
+   2030 permit host 30.123.121.100
+   2040 permit host 30.123.121.101
+   2050 permit host 30.123.121.102
+   2060 permit host 30.123.121.103
+   2070 permit host 30.123.121.104
+   2080 permit host 30.123.121.105
+   2090 permit host 30.123.121.106
+   2100 permit host 30.123.121.107
+   2110 permit host 30.123.121.108
+   2120 permit host 30.123.121.109
+   2130 permit host 30.123.121.110
+   2140 permit host 30.123.121.111
+   2150 permit host 30.123.121.112
+   2160 permit host 30.123.121.113
+   2170 permit host 30.123.121.114
+   2180 permit host 30.123.121.115
+   2190 permit host 30.123.121.116
+   2200 permit host 30.123.121.117
+   2210 permit host 30.123.121.118
+   2220 permit host 30.123.121.119
+   2230 permit host 30.167.140.14
+   2240 permit host 30.167.140.15
+   2250 permit host 30.167.140.16
+   2260 permit host 30.167.140.17
+   2270 permit host 30.167.140.18
+   2280 permit host 30.167.140.19
+   2290 permit host 30.167.140.20
+   2300 permit host 30.167.140.21
+   2310 permit host 30.167.140.22
+   2320 permit host 30.167.140.23
+   2330 permit host 30.167.140.24
+   2340 permit host 30.167.140.25
+   2350 permit host 30.167.140.26
+   2360 permit host 30.167.140.27
+   2370 permit host 30.167.140.28
+   2380 permit host 30.167.140.29
+   2390 permit host 30.167.140.30
+   2400 permit host 30.167.140.31
+   2410 permit host 30.167.140.32
+   2420 permit host 30.167.140.33
+   2430 permit host 30.167.140.34
+!
+ip access-list standard 40
+   10 permit host 224.0.1.118
+   20 permit host 224.0.1.40
+   30 permit 239.255.255.0/24
+   40 permit 233.76.146.0/24
+   50 permit 239.193.0.0/16
+   60 permit 226.0.1.0/24
+!
+ip access-list standard 44
+   10 permit 158.171.222.0/23
+   20 permit 158.171.248.0/23
+   30 permit 167.202.252.0/23
+   40 permit host 171.135.57.73
+   50 permit host 171.135.96.220
+   60 permit host 30.123.65.168
+   70 permit host 30.123.64.14
+   80 permit host 30.123.67.187
+   90 permit host 30.123.66.228
+   100 permit host 30.123.65.53
+   110 permit host 171.196.75.75
+   120 permit host 171.196.72.119
+   130 permit host 30.132.129.156
+   140 permit host 171.196.72.202
+   150 permit host 171.196.74.205
+!
+ip route 0.0.0.0/0 159.5.119.197
+ip route 0.0.0.0/0 159.5.119.225
+ip route 159.5.118.64/27 159.5.119.132 name LAB_LLCC1_DEST_NAT
+ip route 159.5.119.185/32 159.5.119.132
+ip route 159.5.119.186/32 159.5.119.132
+!
+ip routing
+!
+ip multicast-routing
+!
+ip prefix-list BGP-4596_BGP-64958_VIA_LLCC1 seq 5 deny 0.0.0.0/0
+ip prefix-list BGP-4596_BGP-64958_VIA_LLCC1 seq 10000 permit 0.0.0.0/0 le 32
+ip prefix-list BGP-4596_BGP-64958_VIA_LLCC1_PREPEND seq 5 deny 0.0.0.0/0
+ip prefix-list BGP-64590_BGP-64958 seq 5 permit 0.0.0.0/0
+ip prefix-list BGP-64598_BGP-4596 seq 1 permit 0.0.0.0/0
+ip prefix-list BGP-64958_BGP-4596_VIA_LLCC1 seq 1 permit 0.0.0.0/0
+ip prefix-list BGP-64958_BGP-64590 seq 1 deny 0.0.0.0/0
+ip prefix-list BGP-64958_BGP-64590 seq 10 permit 159.5.116.0/22
+ip prefix-list BGP-64958_BGP-64590 seq 15 permit 165.37.175.0/24
+ip prefix-list BGP-64958_BGP-64590 seq 20 permit 69.50.112.0/24
+ip prefix-list BGP-64958_BGP-64590 seq 25 permit 165.37.174.0/24
+ip prefix-list BGP-64958_BGP-64590 seq 30 permit 69.50.112.0/25
+ip prefix-list BGP-64958_BGP-64590 seq 35 permit 69.50.112.128/25
+ip prefix-list BGP-64958_BGP-64590 seq 40 permit 50.93.143.240/32
+ip prefix-list BGP-64958_BGP-64590 seq 45 permit 50.93.143.130/32
+ip prefix-list BGP-64958_BGP-64590 seq 50 permit 50.93.143.141/32
+ip prefix-list BGP-64958_BGP-64590 seq 55 permit 50.93.143.142/32
+ip prefix-list BGP-64958_BGP-64590 seq 65 permit 50.93.143.137/32
+ip prefix-list BGP-64958_BGP-64590 seq 70 permit 69.50.113.0/24
+ip prefix-list BGP-64958_BGP-64590 seq 75 permit 69.50.113.0/25
+ip prefix-list BGP-64958_BGP-64590 seq 80 permit 69.50.113.128/25
+ip prefix-list BGP-64958_BGP-64590 seq 85 permit 128.177.22.32/28
+ip prefix-list BGP-64958_BGP-64590 seq 90 permit 164.74.124.0/25
+ip prefix-list BGP-64958_BGP-64590_FULL_PREPEND seq 1 deny 0.0.0.0/0
+ip prefix-list BGP-64958_BGP-64590_PARTIAL_PREPEND seq 1 deny 0.0.0.0/0
+ip prefix-list PL_LLCC1_NAT_OUT seq 5 deny 0.0.0.0/0
+ip prefix-list PL_LLCC1_NAT_OUT seq 10 permit 159.5.119.0/25
+ip prefix-list PL_LLCC1_NAT_PLUS_DEFAULT_OUT seq 5 permit 0.0.0.0/0
+ip prefix-list PL_LLCC1_NAT_PLUS_DEFAULT_OUT seq 10 permit 159.5.119.0/25
+ip prefix-list STATIC_BGP-4596 seq 5 deny 0.0.0.0/0
+ip prefix-list STATIC_BGP-4596 seq 10 permit 159.5.119.0/25
+!
+route-map BGP-4596_BGP-64958_VIA_LLCC1 permit 40
+   description ROUTES ADVERTISED WITH LOWER PREFERENCE TO LLCC INTERNAL RAIL VIA FIREWALL PAIR 1
+   match ip address prefix-list BGP-4596_BGP-64958_VIA_LLCC1_PREPEND
+   set as-path prepend 4596 4596 4596 4596 4596 4596 4596 4596 4596 4596
+!
+route-map BGP-4596_BGP-64958_VIA_LLCC1 permit 50
+   description ROUTES ADVERTISED TO LLCC INTERNAL RAIL VIA FIREWALL PAIR 1
+   match ip address prefix-list BGP-4596_BGP-64958_VIA_LLCC1
+!
+route-map BGP-64590_BGP-64958 permit 10
+   description Routes advertised to LLCC (LAB) from iEBNC
+   match ip address prefix-list BGP-64590_BGP-64958
+!
+route-map BGP-64958_BGP-4596_VIA_LLCC1 permit 10
+   description ROUTES ADVERTISED TO LLCC EXTERNAL RAIL VIA FIREWALL PAIR 1
+   match ip address prefix-list BGP-64958_BGP-4596_VIA_LLCC1
+!
+route-map BGP-64958_BGP-64590 permit 10
+   description Routes advertised to iEBNC from LLCC (LAB)
+   description TO ENSURE TIE-BREAKER WHEN ROUTE REACHES OTHER METROS
+   description IS EXTERNAL (egp/redistribution) VS INTERNAL (igp) INSTEAD OF AS PATH LENGTH
+   match ip address prefix-list BGP-64958_BGP-64590_PARTIAL_PREPEND
+!
+route-map BGP-64958_BGP-64590 permit 20
+   description Routes advertised to iEBNC from LLCC (LAB)
+   description PREPEND HERE ONLY IF UNABLE TO PREPEND CLOSER TO SOURCE
+   match ip address prefix-list BGP-64958_BGP-64590_FULL_PREPEND
+   set as-path prepend 64958 64958 64958 64958 64958
+!
+route-map BGP-64958_BGP-64590 permit 30
+   description Routes advertised to iEBNC from LLCC (LAB)
+   match ip address prefix-list BGP-64958_BGP-64590
+!
+route-map STATIC_BGP-4596 permit 10
+   description REDISTRIBUTE STATIC ROUTES INTO BGP FOR ADVERTISING TO NEIGHBORS
+   match ip address prefix-list STATIC_BGP-4596
+!
+router bgp 64958
+   timers bgp 3 10
+   maximum-paths 4 ecmp 64
+   neighbor 159.5.119.153 remote-as 64958
+   neighbor 159.5.119.153 next-hop-self
+   neighbor 159.5.119.153 description ALR01_VLAN5
+   neighbor 159.5.119.153 timers 3 10
+   neighbor 159.5.119.153 maximum-routes 12000 
+   neighbor 159.5.119.185 remote-as 4596
+   neighbor 159.5.119.185 remove-private-as
+   neighbor 159.5.119.185 update-source Loopback1
+   neighbor 159.5.119.185 description ELR01_LOOPBACK1 VIA LLCC1 VLAN331 AND VLAN301
+   neighbor 159.5.119.185 ebgp-multihop 16
+   neighbor 159.5.119.185 route-map BGP-64958_BGP-4596_VIA_LLCC1 out
+   neighbor 159.5.119.185 maximum-routes 12000 
+   neighbor 159.5.119.186 remote-as 4596
+   neighbor 159.5.119.186 remove-private-as
+   neighbor 159.5.119.186 update-source Loopback1
+   neighbor 159.5.119.186 description ELR02_LOOPBACK1 VIA LLCC1 VLAN331 AND VLAN301
+   neighbor 159.5.119.186 ebgp-multihop 16
+   neighbor 159.5.119.186 route-map BGP-64958_BGP-4596_VIA_LLCC1 out
+   neighbor 159.5.119.186 maximum-routes 12000 
+   neighbor 159.5.119.197 remote-as 64590
+   neighbor 159.5.119.197 next-hop-self
+   neighbor 159.5.119.197 description USNJSCSHW01BBM02_GE4/1
+   neighbor 159.5.119.197 timers 3 10
+   neighbor 159.5.119.197 route-map BGP-64590_BGP-64958 in
+   neighbor 159.5.119.197 route-map BGP-64958_BGP-64590 out
+   neighbor 159.5.119.197 maximum-routes 12000 
+   network 159.5.119.152/30
+   network 159.5.119.178/32
+   network 159.5.119.184/32
+   network 159.5.119.196/30
+   network 165.37.175.0/24
+   aggregate-address 159.5.116.0/22
+   aggregate-address 165.37.174.0/24 summary-only
+   aggregate-address 165.37.175.0/24 summary-only
+   redistribute static route-map STATIC_BGP-64958
+!
+ip tacacs source-interface Loopback0
+!
+banner login
+
+This computer system is restricted to authorized users.
+   Unauthorized access/attempts will be prosecuted.
+          If unauthorized, disconnect now.
+
+EOF
+banner motd
+
+This computer system is restricted to authorized users.
+   Unauthorized access/attempts will be prosecuted.
+          If unauthorized, disconnect now.
+EOF
+!
+management api http-commands
+   no protocol https
+   protocol unix-socket
+   no shutdown
+!
+management ssh
+   idle-timeout 5
+!
+end
+LNUSNJSCSHW01ALR02#
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+show environment power
+show environment power
+Power                                  Input    Output   Output                
+Supply  Model                Capacity  Current  Current  Power    Status       
+------- -------------------- --------- -------- -------- -------- -------------
+1       PWR-750AC-F               750W    0.37A    2.46A    30.6W Ok
+2       PWR-750AC-F               750W    0.37A    6.37A    67.1W Ok
+Total   --                       1500W       --       --    97.8W --
+LNUSNJSCSHW01ALR02#
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+show environment temperature
+show environment temperature
+System temperature status is: Ok
+                                                                 Alert  Critical
+                                               Temp    Setpoint  Limit     Limit
+Sensor  Description                             (C)         (C)    (C)       (C)
+------- ----------------------------------- ------- ----------- ------ ---------
+1       Digital Temperature Sensor on cpu0     47.0   (80) 80.0     95       105
+2       Digital Temperature Sensor on cpu1     49.0   (80) 80.0     95       105
+3       Digital Temperature Sensor on cpu2     47.0   (80) 80.0     95       105
+4       Digital Temperature Sensor on cpu3     49.0   (80) 80.0     95       105
+5       Supervisor temp sensor                 33.0   (55) 55.0     75        85
+6       Supervisor front-panel temp sensor     26.6   (55) 55.0     75        85
+7       Supervisor back-panel temp sensor      26.0   (55) 55.0     75        85
+8       CPU VRM temp sensor 0                  37.0   (60) 60.0    105       110
+9       CPU VRM temp sensor 1                  37.0   (60) 60.0    105       110
+10      Upper board sensor                     29.0   (55) 55.0     65        75
+11      Upper front-panel temp sensor          25.1   (55) 55.0     65        75
+12      Lower board sensor                     27.0   (55) 55.0     65        75
+13      Lower front-panel temp sensor          24.5   (55) 55.0     65        75
+14      Trident Bottom Right Outer             45.5   (80) 80.0    100       120
+15      Trident Bottom Left Outer              46.6   (80) 80.0    100       120
+16      Trident Top Left Outer                 47.1   (80) 80.0    100       120
+17      Trident Top Right Outer                48.8   (80) 80.0    100       120
+18      Trident Bottom Right Inner             45.5   (80) 80.0    100       120
+19      Trident Bottom Left Inner              47.7   (80) 80.0    100       120
+20      Trident Top Left Inner                 47.1   (80) 80.0    100       120
+21      Trident Top Right Inner                44.4   (80) 80.0    100       120
+
+PowerSupply 1:
+                                                                 Alert  Critical
+                                               Temp    Setpoint  Limit     Limit
+Sensor  Description                             (C)         (C)    (C)       (C)
+------- ----------------------------------- ------- ----------- ------ ---------
+1       Internal hot spot sensor               28.0   (85) 85.0    100       105
+2       Internal ambient sensor                14.0   (55) 55.0     70        75
+
+PowerSupply 2:
+                                                                 Alert  Critical
+                                               Temp    Setpoint  Limit     Limit
+Sensor  Description                             (C)         (C)    (C)       (C)
+------- ----------------------------------- ------- ----------- ------ ---------
+1       Internal hot spot sensor               29.0   (85) 85.0    100       105
+2       Internal ambient sensor                15.0   (55) 55.0     70        75
+LNUSNJSCSHW01ALR02#
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+show boot
+show boot
+Software image: flash:/EOS-4.18.2-REV2-FX.1.swi
+Console speed: (not set)
+Aboot password (encrypted): (not set)
+Memory test iterations: (not set)
+LNUSNJSCSHW01ALR02#
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+dir
+dir
+Directory of flash:/
+
+       -rwx   447682692            Mar 3  2014  EOS-4.13.2F.swi
+       -rwx   479183792           Mar 19  2014  EOS-4.13.3F.swi
+       -rwx   602845764            Dec 1  2017  EOS-4.18.2-REV2-FX.1.swi
+       drwx        4096           Jan 27  2018  bac
+       -rwx          36            Dec 2  2017  boot-config
+       -rwx          21           Feb 11  2016  boot-extensions
+       drwx        4096            Dec 2  2017  debug
+       -rwx        3971           Jan 27  2018  discards.py
+       drwx        4096           Nov 15 11:51  persist
+       -rwx        4969           Jan 27  2018  ptpoffset.py
+       drwx        4096            Mar 3  2014  schedule
+       drwx        4096           Dec 16  2017  scripts
+       -rwx        8365           Feb 11  2016  secAdvisory0015.swix
+       -rwx       54505           Oct 21 21:31  startup-config
+       -rwx       65837           Jan 27  2018  switchZTPBase.py
+       -rwx          13           Mar 18  2014  zerotouch-config
+
+3554070528 bytes total (1293312000 bytes free)
+LNUSNJSCSHW01ALR02#
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+copy running-config startup-config
+copy running-config startup-config
+Copy completed successfully.
+LNUSNJSCSHW01ALR02#

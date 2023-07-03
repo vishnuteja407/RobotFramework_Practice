@@ -1,0 +1,136 @@
+{
+                "deviceName": "USMABOSOF08IDE01",
+                "templateId": "Common-Services-Redundant-Power-Supply-CEWA-V1P4P0-4500",
+                "status": true,
+                "nso_instance": "NSO_61,nso5-rnetsim4",
+                "templateRecordId": "62721150f0e92a62e5287191",
+                "overallTmplResult": true,
+                "commands": [
+                    {
+                        "executedCmd": "show power",
+                        "command": "show power",
+                        "cmdIndex": 1,
+                        "overAllCmdResult": true,
+                        "cmdOutPut": "\r\nshow power\r\nPower                                             Fan      Inline\r\nSupply  Model No          Type       Status       Sensor   Status\r\n------  ----------------  ---------  -----------  -------  -------\r\nPS1     PWR-C45-4200ACV   AC 4200W   good         good     good \r\nPS1-1                         220V   good                         \r\nPS1-2                         220V   good                                \r\nPS2     PWR-C45-4200ACV   AC 4200W   good         good     good  \r\nPS2-1                         220V   good                     \r\nPS2-2                         220V   good                     \r\n\r\nPower supplies needed by system    : 1\r\nPower supplies currently available : 1\r\n\r\nPower Summary                      Maximum\r\n (in Watts)              Used     Available\r\n----------------------   ----     ---------\r\nSystem Power (12V)        803        1360\r\nInline Power (-50V)      1410        3357\r\nBackplane Power (3.3V)     40          40\r\n----------------------   ----     ---------\r\nTotal                    2253 (not to exceed Total Maximum Available = 4200)\r\n\r\nPower Measurement    Inline Power (-50V)\r\n(in Watts)             (+/- 50Watts)\r\n------------------   -------------------\r\nPS1                         350\r\nPS2                         150\r\n------------------   -------------------\r\nTotal                       500\r\n\r\nUSMABOSOF08IDE01# ",
+                        "commandCollectedAt": 1651849022897,
+                        "evaluatedRules": [
+                            {
+                                "op": "Script",
+                                "opvariable": "",
+                                "rule": {},
+                                "result": true,
+                                "template": "cisco_ide_power_supply_check_4500_cewa_v1p4p0.template",
+                                "analysis": "cisco_ide_power_supply_check_4500_analysis_cewa_v1p4p0.py",
+                                "overallstatus": true,
+                                "overallmessage": "Power supply check",
+                                "customStatus": "Passed",
+                                "customStatCode": "Pass",
+                                "executionStatus": true,
+                                "scriptResult": "Executed Successfully.",
+                                "fields": [
+                                    {
+                                        "name": "PS1(Status)",
+                                        "value": "good",
+                                        "info": "Power supply status should be good",
+                                        "status": "Pass"
+                                    },
+                                    {
+                                        "name": "PS1(Fan sensor status)",
+                                        "value": "good",
+                                        "info": "Power supply fan sensor status should be good",
+                                        "status": "Pass"
+                                    },
+                                    {
+                                        "name": "PS1(Inline status)",
+                                        "value": "good",
+                                        "info": "Power supply inline status should be good",
+                                        "status": "Pass"
+                                    },
+                                    {
+                                        "name": "PS1-1(Status)",
+                                        "value": "good",
+                                        "info": "Power supply status should be good",
+                                        "status": "Pass"
+                                    },
+                                    {
+                                        "name": "PS1-2(Status)",
+                                        "value": "good",
+                                        "info": "Power supply status should be good",
+                                        "status": "Pass"
+                                    },
+                                    {
+                                        "name": "PS2(Status)",
+                                        "value": "good",
+                                        "info": "Power supply status should be good",
+                                        "status": "Pass"
+                                    },
+                                    {
+                                        "name": "PS2(Fan sensor status)",
+                                        "value": "good",
+                                        "info": "Power supply fan sensor status should be good",
+                                        "status": "Pass"
+                                    },
+                                    {
+                                        "name": "PS2(Inline status)",
+                                        "value": "good",
+                                        "info": "Power supply inline status should be good",
+                                        "status": "Pass"
+                                    },
+                                    {
+                                        "name": "PS2-1(Status)",
+                                        "value": "good",
+                                        "info": "Power supply status should be good",
+                                        "status": "Pass"
+                                    },
+                                    {
+                                        "name": "PS2-2(Status)",
+                                        "value": "good",
+                                        "info": "Power supply status should be good",
+                                        "status": "Pass"
+                                    },
+                                    {
+                                        "name": "PS2 should have PS2-1 and PS2-2",
+                                        "value": "",
+                                        "info": "PSx-1 and PSx-2 are power cables connected to power supply",
+                                        "status": "Pass"
+                                    },
+                                    {
+                                        "name": "PS1 should have PS1-1 and PS1-2",
+                                        "value": "",
+                                        "info": "PSx-1 and PSx-2 are power cables connected to power supply",
+                                        "status": "Pass"
+                                    }
+                                ],
+                                "format": "1.0",
+                                "globalVariables": {}
+                            },
+                            {
+                                "op": "Script",
+                                "opvariable": "",
+                                "rule": {},
+                                "result": true,
+                                "template": "cisco_ide_required_power_supply_check_4500_cewa_v1p4p0.template",
+                                "analysis": "cisco_ide_required_power_supply_check_4500_analysis_cewa_v1p4p0.py",
+                                "overallstatus": true,
+                                "overallmessage": "Required power supply check",
+                                "customStatus": "Passed",
+                                "customStatCode": "Pass",
+                                "executionStatus": true,
+                                "scriptResult": "Executed Successfully.",
+                                "fields": [
+                                    {
+                                        "name": "Power supply availability check",
+                                        "value": "available",
+                                        "info": "Power supply available should be greater than power supply needed",
+                                        "status": "Pass"
+                                    }
+                                ],
+                                "format": "1.0",
+                                "globalVariables": {}
+                            }
+                        ]
+                    }
+                ],
+                "executionId": "627537427f32ec62e459f0b2",
+                "executionDate": "2022-05-06T14:57:06.970Z"
+            }

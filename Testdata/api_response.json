@@ -1,0 +1,222 @@
+{
+    "allPassed": false,
+    "failedDataList": [
+        {
+            "statusCode": "401",
+            "microservice": "core-services",
+            "message": "BPA is not able to connect to NSO RTP_NSO_56/nso5-lsa5-r1"
+        },
+        {
+            "statusCode": "500",
+            "microservice": "cwm-ms",
+            "message": "BPA is not able to connect to cwm-ms external application"
+        },
+        {
+            "statusCode": "500",
+            "microservice": "cwm-ms",
+            "message": "BPA is NOT able to connect to Rabbit MQ"
+        }
+    ],
+    "successDataList": [
+        {
+            "statusCode": "200",
+            "microservice": "camunda",
+            "message": "Service is up"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "kong",
+            "message": "Service is up"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "auth-service",
+            "message": "Service is up"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "auth-service",
+            "message": "Service is able to connect to DB"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "bac-services-ms",
+            "message": "Service is up"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "camunda-external-tasks",
+            "message": "Service is up"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "cmd-analyzer",
+            "message": "Service is up"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "cms-p",
+            "message": "Service is up"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "core-services",
+            "message": "Service is up"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "core-services",
+            "message": "Service is able to connect to DB"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "core-services",
+            "message": "BPA is able to connect to NSO RTP_NSO_56"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "core-services",
+            "message": "BPA is able to connect to NSO RTP_NSO_56/nso5-lsa0-r2"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "core-services",
+            "message": "BPA is able to connect to NSO RTP_NSO_56/nso5-lsa3-rb"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "core-services",
+            "message": "BPA is able to connect to NSO RTP_NSO_56/nso5-lsa3-rd"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "core-services",
+            "message": "BPA is able to connect to NSO RTP_NSO_56/nso5-lsa3-re"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "core-services",
+            "message": "BPA is able to connect to NSO RTP_NSO_61"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "core-services",
+            "message": "BPA is able to connect to NSO RTP_NSO_61/nso5-lsa4-rb"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "core-services",
+            "message": "BPA is able to connect to NSO RTP_NSO_61/nso5-lsa4-rd"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "core-services",
+            "message": "BPA is able to connect to NSO RTP_NSO_61/nso5-lsa4-re"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "core-services",
+            "message": "BPA is able to connect to NSO RTP_NSO_61/nso5-rnetsim4"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "core-services",
+            "message": "BPA is able to connect to SMTP"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "cwm-ms",
+            "message": "Service is up"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "cwm-ms",
+            "message": "Service is able to connect to DB"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "eps-ms",
+            "message": "Service is up"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "eps-ms",
+            "message": "Service is able to connect to DB"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "hsm-init-ms",
+            "message": "Service is up"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "market-variance",
+            "message": "Service is up"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "market-variance",
+            "message": "Service is able to connect to DB"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "milestones-ms",
+            "message": "Service is up"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "milestones-ms",
+            "message": "Service is able to connect to DB"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "ncd-ms",
+            "message": "Service is up"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "ncd-ms",
+            "message": "Service is able to connect to DB"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "nidm-system-ms",
+            "message": "Service is up"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "nidm-system-ms",
+            "message": "BPA is able to connect to nidm-system-ms external application"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "portal",
+            "message": "Service is up"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "remedy",
+            "message": "Service is up"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "remedy",
+            "message": "Service is able to connect to DB"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "remedy",
+            "message": "BPA is able to connect to remedy external application"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "service-catalog-ms",
+            "message": "Service is up"
+        },
+        {
+            "statusCode": "200",
+            "microservice": "service-catalog-ms",
+            "message": "Service is able to connect to DB"
+        }
+    ]
+}

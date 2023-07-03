@@ -1,0 +1,47 @@
+{
+  "create": [
+    {
+      "ios-global-conf-aaa-cfs:ios-global-conf-aaa-cfs": [
+        {
+          "aaa-new-model": true,
+          "tacacs-timeout": 3,
+          "login-default-line": true,
+          "auth-config-commands": true,
+          "exec-start-stop-group": "tacacs+",
+          "login-named-auth-line": true,
+          "system-start-stop-group": "tacacs+",
+          "tacacs-source-interface": "Vlan120",
+          "login-default-tacacsplus": true,
+          "login-named-auth-listname": "no_tacacs",
+          "commands-0-stop-only-group": "tacacs+",
+          "commands-1-stop-only-group": "tacacs+",
+          "commands-15-stop-only-group": "tacacs+",
+          "authentication-default-enable": true,
+          "authentication-tacacsplus-enable": true,
+          "aaa-tacacsplus-group-command-flag": true,
+          "replace-flag": true,
+          "tacacs": [
+            {
+              "server-name": "10.122.32.58",
+              "server-ip-address": "10.122.32.58",
+              "single-connection": true
+            },
+            {
+              "server-name": "10.122.32.90",
+              "server-ip-address": "10.122.32.90",
+              "single-connection": true
+            }
+          ],
+          "device": "ROBOT-C9300-48U-2-V17",
+          "correlation-id": "de294ea1-84b1-481f-b84f-71f0744af9f5#408",
+          "session-id": "b9b275c0-a3a3-11ec-8461-ad0a11d19261",
+          "order-number": 63,
+          "bpa-custom-data": 63,
+          "tacacs-key": "071D741F4D1B1C11",
+          "tacacs-key-type": 7
+        }
+      ]
+    }
+  ],
+  "delete": []
+}

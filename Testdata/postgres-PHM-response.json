@@ -1,0 +1,41 @@
+{
+    "status": "success",
+    "data": {
+        "resultType": "vector",
+        "result": [
+            {
+                "metric": {
+                    "__name__": "pg_up",
+                    "instance": "postgresdb1:6082",
+                    "job": "postgresql"
+                },
+                "value": [
+                    1655103964.442,
+                    "0"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "pg_up",
+                    "instance": "postgresdb2:6082",
+                    "job": "postgresql"
+                },
+                "value": [
+                    1655103964.442,
+                    "0"
+                ]
+            },
+            {
+                "metric": {
+                    "__name__": "pg_up",
+                    "instance": "postgresdb3:6082",
+                    "job": "postgresql"
+                },
+                "value": [
+                    1655103964.442,
+                    "1"
+                ]
+            }
+        ]
+    }
+}
